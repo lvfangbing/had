@@ -3,5 +3,219 @@ body {
 }
 .main-content {
     height: 750px;
-    background: #808080;
+    /*background: #808080;*/
 }
+.main-container {
+    width: 1000px;
+    height: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-container {
+    width: 1230px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hadlink-logo {
+    height: 100px;
+    width:230px;
+    line-height: 100px;
+    float: left
+}
+/* 导航 */
+.nav-bar {
+    padding-top: 60px;
+}
+.nav-bar li {
+    list-style: none;
+    float: left;
+    width: 140px;
+    height: 40px;
+    border-right:1px solid #cccccc;
+    text-align: center;
+    line-height: 40px;
+}
+.nav-bar li:first-of-type {
+    width: 160px;
+}
+
+.nav-bar  a {
+    display: block;
+    /*width: 105px;*/
+    /*height: 40px;*/
+    text-decoration: none;
+    font-size: 18px;
+    color: #2C3E50;
+}
+.nav-bar li a:hover {
+    /*color: #ffffff;*/
+    text-decoration: none;
+}
+.nav-bar >li:hover {
+    /*background: #ff9326;*/
+    border-bottom: 5px solid #ffa54a;
+}
+.nav-bar li:last-of-type {
+    border-right: 0;
+}
+
+.nav-bar  li:hover .sub-nav {
+    display: block;
+}
+.sub-nav {
+    width: 105px;
+    /*min-height: 200px;*/
+    line-height: 35px;
+    text-align: center;
+    background: #ECF0F1;
+    display: none;
+    position: relative;
+}
+.sub-nav li {
+    width: 105px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin-left: -40px;
+    margin-top: 5px;
+}
+.sub-nav li:hover {
+    background: #ff9326;
+}
+/* 五张图片 */
+.about-us {
+    width: auto;
+    height: 325px;
+    float: left;
+    z-index: 999;
+    position: relative;
+}
+.about-us img {
+    width:198px;
+    height: 321px;
+    z-index: 999;
+    transition: all 0.2s ease-out 0.1s;
+    -moz-transition: all 0.2s ease-out 0.1s; /* Firefox 4 */
+    -webkit-transition: all 0.2s ease-out 0.1s; /* Safari 和 Chrome */
+    -o-transition: all 0.2s ease-out 0.1; /* Opera */
+    text-align: center;
+    line-height: 321px;
+}
+.latest-news {
+    width: auto;
+    height: 340px;
+    float: left;
+    position: relative;
+    position: relative;
+    overflow: inherit;
+}
+.industry {
+    width: auto;
+    height: 500px;
+    float: left;
+    position: relative;
+    position: relative;
+    overflow: inherit;
+}
+.product-info {
+    width: auto;
+    height: 400px;
+    float: left;
+    position: relative;
+    position: relative;
+    overflow: inherit;
+}
+.invite-telents {
+    width: auto;
+    height: 400px;
+    float: left;
+    position: relative;
+    overflow: inherit;
+}
+.m-top-1 {
+    margin-top: 136px;
+}
+.m-top-2 {
+    margin-top: 195px;
+}
+.m-top-3 {
+    margin-top: 143px;
+}
+.m-top-4 {
+    margin-top: 80px;
+}
+.m-top-5 {
+    margin-top: 170px;
+}
+
+.view{
+    transform:scale(1);
+    -ms-transform:scale(1);     /* IE 9 */
+    -moz-transform:scale(1);   /* Firefox */
+    -webkit-transform:scale(1); /* Safari 和 Chrome */
+    -o-transform:scale(1);  /* Opera */
+    animation:         'viewNotActive' 0.2s ease-out;
+    -webkit-animation: 'viewNotActive' 0.2s ease-out;
+    -ms-animation:     'viewNotActive' 0.2s ease-out;
+    -moz-animation:    'viewNotActive' 0.2s ease-out;
+    position: relative;
+    z-index: 1;
+}
+.view.active{
+    transform:scale(1.4);
+    -ms-transform:scale(1.4);     /* IE 9 */
+    -moz-transform:scale(1.4);   /* Firefox */
+    -webkit-transform:scale(1.4); /* Safari 和 Chrome */
+    -o-transform:scale(1.1);  /* Opera */
+    animation:         'viewActive' 0.2s ease-out;
+    -webkit-animation: 'viewActive' 0.2s ease-out;
+    -ms-animation:     'viewActive' 0.2s ease-out;
+    -moz-animation:    'viewActive' 0.2s ease-out;
+    z-index: 9999;
+
+}
+@-webkit-keyframes viewActive{
+    from {
+        transform:scale(1);
+        -ms-transform:scale(1);     /* IE 9 */
+        -moz-transform:scale(1);   /* Firefox */
+        -webkit-transform:scale(1); /* Safari 和 Chrome */
+        -o-transform:scale(1);  /* Opera */
+    }
+    to{
+        transform:scale(1.4);
+        -ms-transform:scale(1.1);     /* IE 9 */
+        -moz-transform:scale(1.4);   /* Firefox */
+        -webkit-transform:scale(1.4); /* Safari 和 Chrome */
+        -o-transform:scale(1.4);  /* Opera */
+    }
+}
+@-webkit-keyframes viewNotActive{
+    from {
+        transform:scale(1.1);
+        -ms-transform:scale(1.1);     /* IE 9 */
+        -moz-transform:scale(1.1);   /* Firefox */
+        -webkit-transform:scale(1.1); /* Safari 和 Chrome */
+        -o-transform:scale(1.1);  /* Opera */
+    }
+    to{
+        transform:scale(1);
+        -ms-transform:scale(1);     /* IE 9 */
+        -moz-transform:scale(1);   /* Firefox */
+        -webkit-transform:scale(1); /* Safari 和 Chrome */
+        -o-transform:scale(1);  /* Opera */
+    }
+}
+.alert-window {
+    width: 1000px;
+    height:750px;
+    position: fixed;
+    top: 101px;
+    background: #808080;
+    z-index: 999;
+    /*background-image: url('../images/formal.jpg');*/
+}
+
+

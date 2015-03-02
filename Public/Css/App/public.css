@@ -1,0 +1,8 @@
+.global-fluid {
+    width: 100%;
+}
+.had-container {
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
