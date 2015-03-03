@@ -6,6 +6,10 @@ return array(
         '__JS__' => __ROOT__.'/'.'Public/Js',
         '__IMG__' => __ROOT__.'/'.'Public/Images'
     ),
+    'URL_ROUTER_ON'   => true,
+    'URL_MODEL' => '2',
+    'DB_FIELDS_CACHE'       =>  true,
+//    'URL_CASE_INSENSITIVE' =>true,//URL大小写
     /* 数据库设置 */
     'DB_TYPE'               =>  'mysql',     // 数据库类型
     'DB_HOST'               =>  '127.0.0.1', // 服务器地址

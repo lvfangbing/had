@@ -3,14 +3,12 @@
  * Created by PhpStorm.
  * User: Administrator
  * Date: 2015/3/1
- * Time: 13:43
+ * Time: 13:41
  */
-
 namespace Home\Controller;
 use Think\Controller;
-class EnterpriseCultureController extends Controller {
+class NewsController extends Controller {
     public function index(){
-        echo 'EnterpriseCultureController';
         $this->display();
     }
 }

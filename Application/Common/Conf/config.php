@@ -7,5 +7,7 @@ return array(
     'APP_SUB_DOMAIN_RULES'    =>    array(
         'admin.self.com'  => 'Admin',  // admin.domain1.com域名指向Admin模块
         'www.self.com'   => 'Home',  // test.domain2.com域名指向Test模块),
-    )
+    ),
+    'URL_MODEL' => '2'
+
 );

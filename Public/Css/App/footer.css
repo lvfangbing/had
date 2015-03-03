@@ -60,3 +60,16 @@
     background: #ff9326;
     text-decoration: none;
 }
+.slideUp {
+    position:fixed;
+    right:40px;
+    bottom:150px;
+    width: 80px;
+    height: 40px;
+    /*background-image: url('../images/backtop.png')*/
+}
+.slideUp:hover {
+    /*width: 41px;*/
+    /*height: 81px;*/
+    opacity: 0.8;
+}
