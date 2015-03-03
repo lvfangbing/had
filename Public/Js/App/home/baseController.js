@@ -25,7 +25,6 @@ define(function(require,exports,module){
             }
         })
     };
-    //exports.setValue = setValue();
     var main = {
         base:function(){
             backTop();

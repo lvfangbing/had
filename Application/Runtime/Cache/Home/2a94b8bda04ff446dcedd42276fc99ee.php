@@ -22,13 +22,15 @@
         <div class="hadlink-logo"><a href="<?php echo U('Index/index');?>"><img src="/Public/Images/hadlinkLOGO.png" alt="海德在在线" width="230" height="98"></a> </div>
         <ul class="nav-bar">
             <li class="bottom-active"><a href="index.html" id="firstPage">首页</a> </li>
-            <li ><a href="<?php echo U('Company/index');?>" id="companyInfo">公司信息</a></li>
+            <li ><a href="/Company" id="companyInfo">公司信息</a></li>
             <li><a href="<?php echo U('News/index');?>" id="news">新闻中心</a></li>
             <li><a href="<?php echo U('EnterpriseCulture/index');?>">企业文化</a></li>
             <li ><a href="<?php echo U('Product/index');?>">业务体系</a></li>
             <li ><a href="<?php echo U('Investor/index');?>">投资者关系</a></li>
             <li ><a href="<?php echo U('BusinessCooperation/index');?>" id="cooperation">合作洽谈</a></li>
+            
         </ul>
+
     </div>
 </div>
 
