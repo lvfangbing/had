@@ -22,4 +22,19 @@ class Admin extends model {
         $newPass = md5($pass);
         return $newPass;
     }
+    static function isActive(){
+        echo 'xxx';
+    }
+    public function select($id,$num){
+        $model = M('admin');
+        $where = [
+          id=>$id,
+            num=>$num
+        ];
+
+
+    }
+    public function aaa(){
+
+    }
 }
