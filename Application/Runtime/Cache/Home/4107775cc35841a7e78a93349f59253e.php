@@ -1,7 +1,9 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>海德在线</title>
     <link rel="stylesheet" type="text/css" href="/Public/Css/App/header.css" />
     <link rel="stylesheet" type="text/css" href="/Public/Css/Base/bootstrap/3.3.0/css/bootstrap.css">
@@ -9,6 +11,12 @@
     
     <link rel="stylesheet" type="text/css" href="/Public/Css/App/company.css" />
 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <script type="text/javascript" src="/Public/Js/Lib/seajs/2.3.0/sea.js"></script>
     <script type="text/javascript" src="/Public/Js/Conf/baseConfig.js"></script>
 </head>
@@ -18,16 +26,15 @@
     
 <div  class="global-fluid header-border-bottom">
     <div class="nav-container">
-        <div class="hadlink-logo"><a href="<?php echo U('Index/index');?>"><img src="/Public/Images/hadlinkLOGO.png" alt="海德在在线" width="230" height="98"></a> </div>
+        <div class="hadlink-logo"><a href="/"><img src="/Public/Images/hadlinkLOGO.png" alt="海德在在线" width="230" height="98"></a> </div>
         <ul class="nav-bar">
-            <li class="bottom-active"><a href="index.html" id="firstPage">首页</a> </li>
-            <li ><a href="/Company" id="companyInfo">公司信息</a></li>
-            <li><a href="<?php echo U('News/index');?>" id="news">新闻中心</a></li>
-            <li><a href="<?php echo U('EnterpriseCulture/index');?>">企业文化</a></li>
-            <li ><a href="<?php echo U('Product/index');?>">业务体系</a></li>
-            <li ><a href="<?php echo U('Investor/index');?>">投资者关系</a></li>
-            <li ><a href="<?php echo U('BusinessCooperation/index');?>" id="cooperation">合作洽谈</a></li>
-            
+            <li class="bottom-active"><a href="/" id="firstPage">首页</a> </li>
+            <li ><a href="/company" id="companyInfo">公司信息</a></li>
+            <li><a href="/news" id="news">新闻中心</a></li>
+            <li><a href="/enterpriseCulture">企业文化</a></li>
+            <li ><a href="/product">业务体系</a></li>
+            <li ><a href="/investor">投资者关系</a></li>
+            <li ><a href="/businessCooperation" id="cooperation">合作洽谈</a></li>
         </ul>
 
     </div>

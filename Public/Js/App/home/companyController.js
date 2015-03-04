@@ -1,5 +1,5 @@
 /**
- * Created by Administrator on 2015/3/3.
+ * Created by Fengdb on 2015/3/3.
  */
 define(function(require,exports,module){
     var $ = require('jquery');

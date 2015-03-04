@@ -37,6 +37,6 @@ define(function(require,exports,module){
                 setPosition(loginForm);
             });
         }
-    }
+    };
     module.exports = main
-})
+});

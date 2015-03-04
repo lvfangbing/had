@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="__CSS__/Base/bootstrap/3.3.0/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="__CSS__/Base/flatui/dist/css/flat-ui.min.css">
-    <script type="text/javascript" src="__JS__/Lib/seajs/2.3.0/sea.js"></script>
-    <script type="text/javascript" src="__JS__/Conf/adminConfig.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Public/Css/Base/bootstrap/3.3.0/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/Public/Css/Base/flatui/dist/css/flat-ui.min.css">
+    <script type="text/javascript" src="/Public/Js/Lib/seajs/2.3.0/sea.js"></script>
+    <script type="text/javascript" src="/Public/Js/Conf/adminConfig.js"></script>
 </head>
 <body style="background: #1ABC9C">
 <div class="container-fluid" >
@@ -17,7 +17,7 @@
     <!--</div>-->
 
     <div id="login-form" class="login-form" style="width: 420px;height: 300px;">
-        <form action="{:U('Index/dealLogin')}" method="post">
+        <form action="<?php echo U('Index/dealLogin');?>" method="post">
             <div class="form-group">
                 <input type="text" name="username" class="form-control login-field" value="" placeholder="Enter your name" id="login-name" />
                 <label class="login-field-icon fui-user" for="login-name"></label>
@@ -41,4 +41,3 @@
 </script>
 </body>
 </html>
-

@@ -11,7 +11,6 @@ namespace Home\Controller;
 use Think\Controller;
 class BusinessCooperationController extends Controller {
     public function index(){
-        echo 'xxxx';
         $this->display();
     }
 }

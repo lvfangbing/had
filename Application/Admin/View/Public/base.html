@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>后台管理</title>
+
     <link rel="stylesheet" type="text/css" href="__CSS__/Base/bootstrap/3.3.0/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="__CSS__/App/index.css">
     <block name="css"></block>
@@ -13,12 +14,14 @@
     <link rel="stylesheet" type="text/css" href="__CSS__/Base/public.css">
     <script type="text/javascript" src="__JS__/Lib/seajs/2.3.0/sea.js"></script>
     <script type="text/javascript" src="__JS__/Conf/baseConfig.js"></script>
+
 </head>
 <body>
 <!--头部-->
 <div class="global-fluid">
     <div class="global-container">
         <div id="header">
+
         </div>
         <div id="sidebar"><include file="Public/sidebar" /></div>
     </div>
@@ -30,8 +33,10 @@
             <li><a href="#">图片管理</a></li>
             <li class="active">新闻管理</li>
         </ol>
+
     <block name="main"></block>
 </div>
+
 <script type="text/javascript">
     seajs.use(['baseController.js','base/siderbar.js'], function(main,Accordion) {
         main.layout();

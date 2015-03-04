@@ -4,7 +4,7 @@
 
 seajs.config({
     // Sea.js 的基础路径
-    base: '/Public/Js/App/home/',
+    base: '/Public/Js/App/admin/',
     // 别名配置
     alias: {
         'es5-safe': '/Public/Js/App/base/es5-safe.js',

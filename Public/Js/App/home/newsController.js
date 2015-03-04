@@ -11,6 +11,12 @@ define(function(require,exports,module){
         div.each(function(){
             $(this).find('li').last().css('border','none');
         });
+        var list = $('.news-list');
+        var companyNews = $('#companyNews');
+        companyNews.on('click','.news-list',function(){
+            var id = $(this).data('id');
+            window.open('News/showContent?id='+id);
+        });
         $(window).scroll(function(){
             var top = $(document).scrollTop();
             if(top >= 150){

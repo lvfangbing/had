@@ -6,7 +6,6 @@ return array(
         '__JS__' => __ROOT__.'/'.'Public/Js'
     ),
     'MODULE_ALLOW_LIST' =>array('Home','Admin','User'),
-    'DEFAULT_MODULE'  =>  'Home',  // 默认模块
     /* 数据库设置 */
     'DB_TYPE'               =>  'mysql',     // 数据库类型
     'DB_HOST'               =>  '127.0.0.1', // 服务器地址

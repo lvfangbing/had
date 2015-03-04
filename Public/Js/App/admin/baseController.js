@@ -3,7 +3,7 @@
  */
 define(function(require,exports,module){
     var $ = require('jquery');
-    require('bootstrap');
+    //require('bootstrap');
     function backTop(){
         var slideUp = $('#slideUp');
         slideUp.fadeOut(300);

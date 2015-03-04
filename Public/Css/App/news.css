@@ -63,3 +63,19 @@
 .text-over {
     overflow: hidden;
 }
+.news-center {
+    margin-left: 65px;
+    margin-top: 20px;
+}
+.section-news {
+    width: 90%;
+    padding: 20px;
+}
+.section-news p {
+    line-height: 1.5;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+.text-over {
+    overflow: hidden;
+}
