@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>海德在线</title>
-    <link rel="stylesheet" type="text/css" href="/Public/Css/App/header.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/Css/App/home/header.css" />
     <link rel="stylesheet" type="text/css" href="/Public/Css/Base/bootstrap/3.3.0/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="/Public/Css/App/public.css">
+    <link rel="stylesheet" type="text/css" href="/Public/Css/App/home/public.css">
     
-    <link rel="stylesheet" type="text/css" href="/Public/Css/App/header.css" />
-    <link rel="stylesheet" type="text/css" href="/Public/Css/App/index.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/Css/App/home/header.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/Css/App/home/index.css" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,14 +30,13 @@
         <div class="hadlink-logo"><a href="/"><img src="/Public/Images/hadlinkLOGO.png" alt="海德在在线" width="230" height="98"></a> </div>
         <ul class="nav-bar">
             <li class="bottom-active"><a href="/" id="firstPage">首页</a> </li>
-            <li ><a href="/company" id="companyInfo">公司信息</a></li>
-            <li><a href="/news" id="news">新闻中心</a></li>
-            <li><a href="/enterpriseCulture">企业文化</a></li>
-            <li ><a href="/product">业务体系</a></li>
-            <li ><a href="/investor">投资者关系</a></li>
-            <li ><a href="/businessCooperation" id="cooperation">合作洽谈</a></li>
+            <li ><a href="<?php echo U('company/index');?>" id="companyInfo">公司信息</a></li>
+            <li><a href="<?php echo U('news/index');?>" id="news">新闻中心</a></li>
+            <li><a href="<?php echo U('EnterpriseCulture/index');?>">企业文化</a></li>
+            <li ><a href="<?php echo U('product/index');?>">业务体系</a></li>
+            <li ><a href="<?php echo U('investor/index');?>">投资者关系</a></li>
+            <li ><a href="<?php echo U('BusinessCooperation/index');?>" id="cooperation">合作洽谈</a></li>
         </ul>
-
     </div>
 </div>
 
@@ -63,7 +62,7 @@
 
     
 
-    <link rel="stylesheet" type="text/css" href="/Public/Css/App/footer.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/Css/App/home/footer.css" />
 
 <div class="global-footer">
     <div class="global-fluid" >

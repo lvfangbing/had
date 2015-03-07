@@ -2,7 +2,8 @@
 .header-border-bottom {
     border-bottom: 1px  #808080;
     background: #eeeeee;
-    box-shadow: 0 0 5px 0 #888888;
+    /*box-shadow: 0 0 5px 0 #888888;*/
+     box-shadow: 0 0 5px 0 #DDD;
 }
 .header {
     height: 100px;
@@ -17,22 +18,22 @@
     margin-right: auto;
 }
 .hadlink-logo {
-    height: 98px;
+    height: 100px;
     width:230px;
-    line-height: 98px;
+    line-height: 100px;
     float: left
 }
 .nav-bar {
-    padding-top: 60px;
+    padding-top: 55px;
 }
 .nav-bar li {
     list-style: none;
     float: left;
     width: 140px;
-    height: 40px;
+    height: 45px;
     border-right:1px solid #cccccc;
     text-align: center;
-    line-height: 40px;
+    line-height: 45px;
 }
 .nav-bar li:first-of-type {
     width: 160px;

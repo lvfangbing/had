@@ -1,17 +1,26 @@
+body {
+    background: #f7f7f7;
+}
 .global-fluid {
     width: 100%;
 }
 .had-container {
-    width: 1170px;
+    width: 1000px;
     margin-right: auto;
     margin-left: auto;
-    padding-top:2px;
+    /*padding-top:1px;*/
 }
 .div-center {
     margin-left: auto;
+    margin-right: auto;
 }
 .section-common {
     width: 1000px;
     border-bottom: 2px solid #eaeaea;
     overflow: hidden;
+}
+
+.p-h3 {
+    color: #ffa54a;
+    margin-top: 40px;
 }

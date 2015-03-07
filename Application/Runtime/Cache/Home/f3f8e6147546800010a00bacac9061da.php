@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>海德在线</title>
-    <link rel="stylesheet" type="text/css" href="/Public/Css/App/header.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/Css/App/home/header.css" />
     <link rel="stylesheet" type="text/css" href="/Public/Css/Base/bootstrap/3.3.0/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="/Public/Css/App/public.css">
+    <link rel="stylesheet" type="text/css" href="/Public/Css/App/home/public.css">
     
-    <link rel="stylesheet" type="text/css" href="/Public/Css/App/businessCooperation.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/Css/App/home/businessCooperation.css" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -201,7 +201,7 @@
 
     
 
-    <link rel="stylesheet" type="text/css" href="/Public/Css/App/footer.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/Css/App/home/footer.css" />
 
 <div class="global-footer">
     <div class="global-fluid" >

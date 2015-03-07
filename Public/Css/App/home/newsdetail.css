@@ -1,0 +1,444 @@
+/* top css file */
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+}
+
+/* footer css file */
+.global-footer {
+    width: 100%;
+    height: 500px;
+}
+.global-footer .title-font {
+    color: #ffffff;
+    font-size: 18px;
+}
+.global-footer .section-one {
+    padding-top: 100px;
+    width: 200px;
+    height: auto;
+    text-align: left;
+    float: left;
+}
+.footer-copyright a {
+    color:#dcdcdc;
+}
+.footer-copyright a:hover {
+    color:  #ffffff;
+    text-decoration: none;
+}
+.section-one li {
+    width: 120px;
+    list-style: none;
+    margin-top: 16px;
+    margin-left: 50px;
+}
+.section-one a {
+    text-decoration: none;
+    color: #cacaca;
+    font-size: 17px;
+}
+.section-one li a:hover {
+    background: #ff9326;
+    text-decoration: none;
+}
+.global-footer .section-two {
+    padding-top: 100px;
+    width: 130px;
+    height: auto;
+    text-align: left;
+    margin-left: 30px;
+    float: left;
+}
+
+.section-two li {
+    width: 120px;
+    list-style: none;
+    margin-top: 6px;
+    margin-left: 15px;
+}
+.section-two a {
+    text-decoration: none;
+    color: #cacaca;
+    font-size: 17px;
+}
+.section-two li a:hover {
+    background: #ff9326;
+    text-decoration: none;
+}
+/* Corporate Culture css file */
+.core-content {
+    width: 100%;
+    float: left;
+}
+.core-content .core-pic {
+    width: 120px;
+    height: 120px;
+    float: left;
+}
+.column-pic {
+    width: 250px;
+    height: 200px;
+    /*background: #ffa54a;*/
+    float: left;
+    padding-top: 20px;
+    margin-left: 30px;
+    /*overflow: hidden;*/
+}
+/* index css file */
+.alert-window {
+    width: 100%;
+    height:740px;
+    position: fixed;
+    top: 170px;
+    /*background: #808080;*/
+    z-index: 999;
+}
+.about-us {
+    width: auto;
+    height: 325px;
+    float: left;
+    z-index: 999;
+    position: relative;
+}
+.about-us img {
+    width:198px;
+    height: 321px;
+    z-index: 999;
+    transition: all 0.2s ease-out 0.1s;
+    -moz-transition: all 0.2s ease-out 0.1s; /* Firefox 4 */
+    -webkit-transition: all 0.2s ease-out 0.1s; /* Safari 和 Chrome */
+    -o-transition: all 0.2s ease-out 0.1; /* Opera */
+    text-align: center;
+    line-height: 321px;
+}
+.latest-news {
+    width: auto;
+    height: 340px;
+    float: left;
+    position: relative;
+    position: relative;
+   overflow: inherit;
+}
+.industry {
+    width: auto;
+    height: 500px;
+    float: left;
+    position: relative;
+    position: relative;
+   overflow: inherit;
+}
+.product-info {
+    width: auto;
+    height: 400px;
+    float: left;
+    position: relative;
+    position: relative;
+   overflow: inherit;
+}
+.invite-telents {
+    width: auto;
+    height: 400px;
+    float: left;
+    position: relative;
+    overflow: inherit;
+}
+.m-top-1 {
+    margin-top: 136px;
+}
+.m-top-2 {
+    margin-top: 195px;
+}
+.m-top-3 {
+    margin-top: 143px;
+}
+.m-top-4 {
+    margin-top: 80px;
+}
+.m-top-5 {
+    margin-top: 170px;
+}
+
+.company-nav {
+    width: 120px;
+    min-height: 200px;
+    background: #ececec;
+    position: fixed;
+    top: 250px;
+
+}
+.news-nav {
+    width: 120px;
+    min-height: 130px;
+    background: #ececec;
+    position: fixed;
+    padding-top: 5px;
+    /*top:150px;*/
+}
+.news-nav li {
+    width: 120px;
+    height: 35px;
+    margin-left: -40px;
+    /*margin-right: auto;*/
+    line-height: 35px;
+    text-align: center;
+    list-style: none;
+    margin-top: 5px;
+}
+.news-nav li:hover{
+    background: #ff9326;
+}
+.news-nav a {
+    /*width: 120px;*/
+    /*height: 35px;*/
+    color: #2C3E50;
+    text-decoration: none;
+}
+.news-nav a:hover {
+    cursor: pointer;
+    /*background: #ffa54a;*/
+    text-decoration: none;
+}
+
+.company-nav li {
+    width: 120px;
+    height: 35px;
+    margin-left: -40px;
+    line-height: 35px;
+    text-align: center;
+    list-style: none;
+    margin-top: 5px;
+}
+.company-nav li:hover{
+    background: #ff9326;
+}
+.company-nav a {
+    /*width: 120px;*/
+    /*height: 35px;*/
+    color: #2C3E50;
+    text-decoration: none;
+}
+.company-nav a:hover {
+    cursor: pointer;
+    /*background: #ffa54a;*/
+    text-decoration: none;
+}
+.div-center {
+    margin-left: auto;
+}
+.section-intro {
+    width: 85%;
+    height: 500px;
+    background: #ffffff;
+    border-bottom: 2px solid #eaeaea;
+    overflow: hidden;
+    z-index: -1;
+}
+.section-commen {
+    width: 85%;
+    border-bottom: 2px solid #eaeaea;
+    overflow: hidden;
+}
+.section-ceo {
+    width: 85%;
+    height: 1050px;
+    border-bottom: 2px solid #eaeaea;
+}
+.section-ceo .word-pic {
+    width: 210px;
+    height: 210px;
+}
+.section-ceo .pic-intro {
+    width: 250px;
+    height: 50px;
+    text-align: center;
+}
+.section-commen .person-show {
+    width: 250px;
+    height: 350px;
+    margin-left: 30px;
+    float: left;
+    margin-top: 40px;
+
+}
+.pic-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.person-show .show-title {
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    line-height: 50px;
+
+}
+.person-show .show-pic {
+    width:200px;
+    height: 200px;
+
+}
+.pic-scale {
+    width: 90%;
+    height: 90%;
+}
+.pic-scale-y {
+    width: 98%;
+    height: 98%;
+}
+.person-show .show-words {
+    height: 100px;
+    width: 200px;
+    text-align: left;
+    margin-top: 20px;
+    color: #303030;
+}
+
+/* news css file */
+.news-ul li {
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    line-height: 50px;
+    border-bottom: 1px solid #dcdcdc;
+    /*font-size: 14px;*/
+}
+.news-ul li a {
+  color: #004276;
+}
+
+.p-low {
+    line-height: 1.5;
+    margin-top: 15px;
+    text-indent: 2em;
+}
+.p-h3 {
+    color: #ffa54a;
+    margin-top: 40px;
+}
+.section-news {
+    width: 90%;
+    padding: 20px;
+}
+.section-news p {
+    line-height: 1.5;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+.text-over {
+    overflow: hidden;
+}
+.slideup {
+    position:fixed;
+    right:40px;
+    bottom:150px;
+    width: 80px;
+    height: 40px;
+    /*background-image: url('../images/backtop.png')*/
+}
+.slideup:hover {
+    /*width: 41px;*/
+    /*height: 81px;*/
+    opacity: 0.8;
+}
+/*.alert-window {*/
+    /*color:#ffa54a;*/
+    /*font-size: 12px;*/
+    /*width: 34px;*/
+    /*height: 25px;*/
+/*}*/
+.omit:hover {
+    background: wheat;
+    cursor: pointer;
+}
+.shrink {
+    width: 100%;
+    height: 60px;
+    overflow: hidden
+}
+.spread {
+    width: 100%;
+    height: 100px;
+   overflow: inherit;
+}
+/* index css file */
+.view{
+    transform:scale(1);
+    -ms-transform:scale(1);     /* IE 9 */
+    -moz-transform:scale(1);   /* Firefox */
+    -webkit-transform:scale(1); /* Safari 和 Chrome */
+    -o-transform:scale(1);  /* Opera */
+    animation:         'viewNotActive' 0.2s ease-out;
+    -webkit-animation: 'viewNotActive' 0.2s ease-out;
+    -ms-animation:     'viewNotActive' 0.2s ease-out;
+    -moz-animation:    'viewNotActive' 0.2s ease-out;
+    position: relative;
+    z-index: 1;
+}
+.view.active{
+    transform:scale(1.4);
+    -ms-transform:scale(1.4);     /* IE 9 */
+    -moz-transform:scale(1.4);   /* Firefox */
+    -webkit-transform:scale(1.4); /* Safari 和 Chrome */
+    -o-transform:scale(1.1);  /* Opera */
+    animation:         'viewActive' 0.2s ease-out;
+    -webkit-animation: 'viewActive' 0.2s ease-out;
+    -ms-animation:     'viewActive' 0.2s ease-out;
+    -moz-animation:    'viewActive' 0.2s ease-out;
+    z-index: 9999;
+
+}
+@-webkit-keyframes viewActive{
+    from {
+        transform:scale(1);
+        -ms-transform:scale(1);     /* IE 9 */
+        -moz-transform:scale(1);   /* Firefox */
+        -webkit-transform:scale(1); /* Safari 和 Chrome */
+        -o-transform:scale(1);  /* Opera */
+    }
+    to{
+        transform:scale(1.4);
+        -ms-transform:scale(1.1);     /* IE 9 */
+        -moz-transform:scale(1.4);   /* Firefox */
+        -webkit-transform:scale(1.4); /* Safari 和 Chrome */
+        -o-transform:scale(1.4);  /* Opera */
+    }
+}
+@-webkit-keyframes viewNotActive{
+    from {
+        transform:scale(1.1);
+        -ms-transform:scale(1.1);     /* IE 9 */
+        -moz-transform:scale(1.1);   /* Firefox */
+        -webkit-transform:scale(1.1); /* Safari 和 Chrome */
+        -o-transform:scale(1.1);  /* Opera */
+    }
+    to{
+        transform:scale(1);
+        -ms-transform:scale(1);     /* IE 9 */
+        -moz-transform:scale(1);   /* Firefox */
+        -webkit-transform:scale(1); /* Safari 和 Chrome */
+        -o-transform:scale(1);  /* Opera */
+    }
+}
+.bread-crumbs {
+    /*width:100px;*/
+    /*height:42px;*/
+    vertical-align:bottom;
+    font-size: 17px;
+    color: #2C3E50;
+    /*margin-left: 15px;*/
+}
+.bread-crumbs:hover {
+    /*background: #ff9326;*/
+    text-decoration: none;
+}
+.news-center {
+    margin-left: 65px;
+    margin-top: 20px;
+}
+.bottom-active {
+    border-bottom: 5px solid #ffa54a ;
+}

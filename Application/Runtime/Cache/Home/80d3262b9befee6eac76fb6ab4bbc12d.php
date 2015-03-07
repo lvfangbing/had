@@ -5,12 +5,12 @@
     <title>后台管理</title>
 
     <link rel="stylesheet" type="text/css" href="/Public/Css/Base/bootstrap/3.3.0/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="/Public/Css/App/index.css">
+    <link rel="stylesheet" type="text/css" href="/Public/Css/App/home/index.css">
     <!--<link rel="stylesheet" type="text/css" href="/Public/Css/Base/easyui/default/easyui.css">-->
     <!--<link rel="stylesheet" type="text/css" href="/Public/Css/Base/easyui/icon.css">-->
     <link rel="stylesheet" type="text/css" href="/Public/Css/Base/siderbar/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/Public/Css/Base/siderbar/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/Public/Css/Base/public.css">
+    <link rel="stylesheet" type="text/css" href="/Public/Css/App/admin/public.css">
     <script type="text/javascript" src="/Public/Js/Lib/seajs/2.3.0/sea.js"></script>
     <script type="text/javascript" src="/Public/Js/Conf/baseConfig.js"></script>
 </head>

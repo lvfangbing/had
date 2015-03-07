@@ -1,22 +1,21 @@
 <extend name="Public:base" />
 <block name="css">
-    <load href="__CSS__/App/company.css" />
+    <load href="__CSS__/App/home/company.css" />
 </block>
 <block name="content">
-    <div class="had-container">
-        <!--左侧导航-->
-        <div class="company-nav">
-            <ul>
-                <li id="js-comIntro"  ><a data-id="1" href="#companyIntro" > 公司介绍</a></li>
-                <li id="js-president" ><a data-id="2" href="#president" >总裁寄语</a></li>
-                <li id="js-devCourse" ><a data-id="3" href="#devCourse" >发展历程</a></li>
-                <li id="js-organization"><a data-id="4" href="#organization" >组织结构</a></li>
-                <li id="js-coreGroup" ><a data-id="5" href="#coreGroup" >核心团队</a></li>
-            </ul>
-        </div>
+    <!--左侧导航-->
+    <div id="company" class="company-nav" >
+        <div id="subIntro" class="nav-div active-font"><a  href="" class="">公司介绍</a></div>
+        <div id="subPresident" class="nav-div"><a  href="">总裁寄语</a></div>
+        <div id="subDev" class="nav-div"><a  href="">发展历程</a></div>
+        <div id="subOrganization" class="nav-div"><a  href="">组织结构</a></div>
+        <div id="subGroup" class="nav-div"><a  href="">核心团队</a></div>
+    </div>
+    <div class="had-container bg-white">
         <!--公司介绍-->
-        <div id="companyIntro" class="section-intro div-center" style="height: 540px;">
-            <div class="word-pic pic-center"  ><img src="__IMG__/large.png" ></div>
+        <div class="pic-center" style="width: 1000px;" ><img src="__IMG__/large.png" ></div>
+        <div id="companyIntro" class="section-intro div-center pd-20" style="height: 340px;">
+
             <h3 class="p-h3">公司介绍</h3>
             <p class="p-low">海德在线成立于2014年3月，是目前中国少数以构建汽车后市场生态产业链为己任的互联网公司，旗下“<font color="red"><a href="http://www.91czs.com" style="color: #ffa54a">开呗</a></font>”品牌、也是中国目前最具活力的车生活服务平台之一，总部位于年轻美丽而又充满激情与活力的深圳。</p>
 
@@ -32,7 +31,7 @@
 
         </div>
         <!--总裁寄语-->
-        <div id="president" class="section-ceo div-center"  style="margin-top: 40px;min-height: 1090px; ">
+        <div id="president" class="section-ceo div-center pd-20"  style="margin-top: 40px;height: 1000px; ">
             <h3 class="p-h3">总裁寄语</h3>
             <div class="word-pic pic-center"><img src="__IMG__/ceo.png"></div>
             <div class="pic-intro pic-center">
@@ -69,19 +68,19 @@
 
         </div>
         <!--发展历程-->
-        <div id="devCourse" class="section-common div-center" style="height: 1400px;">
+        <div id="devCourse" class="section-common div-center pd-20" style="height: 1400px;">
             <h3 style="color: #ffa54a;">发展历程</h3>
             <img src="__IMG__/dev-course.png" >
         </div>
         <!--组织架构-->
-        <div id="organization" class="section-common div-center" style="height: 1500px;">
+        <div id="organization" class="section-common div-center pd-20" style="height: 1500px;">
             <h3 style="color: #ffa54a;">组织架构</h3>
             <div class="pic-center" >
                 <img src="__IMG__/organization.png">
             </div>
         </div>
         <!--核心团队-->
-        <div id="coreGroup" class="section-common div-center" style="min-height: 1750px;">
+        <div id="coreGroup" class="section-common div-center bg-white" style="min-height: 1750px;padding: 0 20px;">
             <h3 style="color: #ffa54a;padding-top: 20px;">核心团队</h3>
             <div class="person-show" >
                 <div class="show-title" >

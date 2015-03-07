@@ -16,7 +16,7 @@ body {
 	background: #f5f8f9;
 }
 .navbar-top-links li .icon, .navbar-top-links li .icon, .sidebar ul li .arrow, .nav-tabs i, .nav-tabs li:hover i, .form-boder .download i, .list-one .ic-txt, .btn-search i, .info-bg i, .fst .icon, .optionIcons span, .tip-one .num, .input-group .s-search i, .input-group .nav_more, .t-one-icon em, .navbar-form em, .re-editing, .choose-role i, .u-tips em, .input-group .times, .form-inline .delete {
-	background: url(./img/icon.png) no-repeat -9999px -9999px;
+	background: url(../../Base/img/icon.png) no-repeat -9999px -9999px;
 }
 /**lyview add modal bug**/
 .modal-dialog {
@@ -57,7 +57,7 @@ input.error {
 	border: 1px solid #ff0000;
 }
 em.error {
-	background: url(./img/register.png) no-repeat scroll 0 -60px rgba(0, 0, 0, 0);
+	background: url(../../Base/img/register.png) no-repeat scroll 0 -60px rgba(0, 0, 0, 0);
 	display: inline-block;
 	font-style: normal;
 	margin-top: 5px;
@@ -71,7 +71,7 @@ em.error {
 	display: inline-block;
 }
 em.success {
-	background: url(./img/register.png) no-repeat scroll 0 0px transparent;
+	background: url(../../Base/img/register.png) no-repeat scroll 0 0px transparent;
 	display: inline-block;
 	font-style: normal;
 	margin-top: 5px;
@@ -80,7 +80,7 @@ em.success {
 	height: 16px;
 }
 em.warning {
-	background: url(./img/register.png) no-repeat scroll 0 -123px transparent;
+	background: url(../../Base/img/register.png) no-repeat scroll 0 -123px transparent;
 	display: inline-block;
 	font-style: normal;
 	margin-top: 5px;
@@ -168,10 +168,10 @@ em.ajaxerror {
 	margin-right: 4px;
 }
 .sidebar ul li .icon-menu {
-	background: url(./img/sidebar-features.png) 0 2px no-repeat;
+	background: url(../../Base/img/sidebar-features.png) 0 2px no-repeat;
 }
 .sidebar ul li .icon-school {
-	background: url(./img/sidebar-school.png) 0 2px no-repeat;
+	background: url(../../Base/img/sidebar-school.png) 0 2px no-repeat;
 }
 .sidebar ul li .arrow {
 	background-position: -24px -644px;
@@ -487,7 +487,7 @@ em.red {
 	position: relative;
 }
 .starScoreBox .starScoreHolder span ,.starScoreBox .starScoreHolderLock span{
-	background: url(./img/star.png) no-repeat scroll -20px 0;
+	background: url(../../Base/img/star.png) no-repeat scroll -20px 0;
 	cursor: pointer;
 	float: left;
 	height: 18px;
@@ -634,14 +634,14 @@ em.red {
 	display: inline-block;
 }
 .icheckbox_div .radio {
-	background: url(./img/radio.png) no-repeat scroll center top;
+	background: url(../../Base/img/radio.png) no-repeat scroll center top;
 	display: block;
 	height: 19px;
 	vertical-align: middle;
 	width: 19px;
 }
 .icheckbox_div .checkbox {
-	background: url(./img/radio.png) no-repeat scroll center top;
+	background: url(../../Base/img/radio.png) no-repeat scroll center top;
 	display: block;
 	height: 20px;
 	vertical-align: middle;
@@ -652,14 +652,14 @@ em.red {
 	background-position: center bottom;
 }
 .icheckbox_div .st-radio {
-	background: url(./img/st-radio.png) no-repeat scroll center top;
+	background: url(../../Base/img/st-radio.png) no-repeat scroll center top;
 	display: block;
 	height: 19px;
 	vertical-align: middle;
 	width: 19px;
 }
 .icheckbox_div .st-checkbox {
-	background: url(./img/st-checkbox.png) no-repeat scroll center top;
+	background: url(../../Base/img/st-checkbox.png) no-repeat scroll center top;
 	display: block;
 	height: 19px;
 	vertical-align: middle;
@@ -814,10 +814,10 @@ input[type="radio"], input[type="checkbox"] {
 	padding-left: 16px;
 }
 #root .add {
-	background: url(./img/net.png) 0 0 no-repeat;
+	background: url(../../Base/img/net.png) 0 0 no-repeat;
 }
 #root .ren {
-	background: url(./img/net.png) 0px -24px no-repeat;
+	background: url(../../Base/img/net.png) 0px -24px no-repeat;
 }
 #root li a {
 	color: #666666;
@@ -845,7 +845,7 @@ blr:expression(this.onFocus=this.blur());
 	background-position: center bottom;
 }
 .icheckbox .checkbox {
-	background: url(./img/st-checkbox.png) no-repeat scroll center top rgba(0, 0, 0, 0);
+	background: url(../../Base/img/st-checkbox.png) no-repeat scroll center top rgba(0, 0, 0, 0);
 	display: block;
 	height: 19px;
 	vertical-align: middle;
@@ -1050,12 +1050,12 @@ blr:expression(this.onFocus=this.blur());
 	border-radius: 5px 0 0 5px;
 }
 .pg a.nxt {
-	background-image: url(img/arw_r.gif);
+	background-image: url(../../Base/img/arw_r.gif);
 	background-position: 90% 50%;
 	padding-right: 25px;
 }
 .pg a.prev {
-	background-image: url(img/arw_l.gif);
+	background-image: url(../../Base/img/arw_l.gif);
 	background-position: 10% 50%;
 }
 .pg a, .pg strong, .pg label {

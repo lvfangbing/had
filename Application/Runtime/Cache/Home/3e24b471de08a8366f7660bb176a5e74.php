@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>海德在线</title>
-    <link rel="stylesheet" type="text/css" href="/Public/Css/App/header.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/Css/App/home/header.css" />
     <link rel="stylesheet" type="text/css" href="/Public/Css/Base/bootstrap/3.3.0/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="/Public/Css/App/public.css">
+    <link rel="stylesheet" type="text/css" href="/Public/Css/App/home/public.css">
     
-    <link rel="stylesheet" type="text/css" href="/Public/Css/App/news.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/Css/App/home/news.css" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,14 +29,13 @@
         <div class="hadlink-logo"><a href="/"><img src="/Public/Images/hadlinkLOGO.png" alt="海德在在线" width="230" height="98"></a> </div>
         <ul class="nav-bar">
             <li class="bottom-active"><a href="/" id="firstPage">首页</a> </li>
-            <li ><a href="/company" id="companyInfo">公司信息</a></li>
-            <li><a href="/news" id="news">新闻中心</a></li>
-            <li><a href="/enterpriseCulture">企业文化</a></li>
-            <li ><a href="/product">业务体系</a></li>
-            <li ><a href="/investor">投资者关系</a></li>
-            <li ><a href="/businessCooperation" id="cooperation">合作洽谈</a></li>
+            <li ><a href="<?php echo U('company/index');?>" id="companyInfo">公司信息</a></li>
+            <li><a href="<?php echo U('news/index');?>" id="news">新闻中心</a></li>
+            <li><a href="<?php echo U('EnterpriseCulture/index');?>">企业文化</a></li>
+            <li ><a href="<?php echo U('product/index');?>">业务体系</a></li>
+            <li ><a href="<?php echo U('investor/index');?>">投资者关系</a></li>
+            <li ><a href="<?php echo U('BusinessCooperation/index');?>" id="cooperation">合作洽谈</a></li>
         </ul>
-
     </div>
 </div>
 
@@ -56,19 +55,24 @@
             <div class="word-pic pic-center"><img src="/Public/Images/news.png"></div>
             <h3 style="color: #ffa54a;padding-top: 25px;">公司新闻</h3>
             <ul class="news-ul">
-                <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a href="" class="news-list" data-id="<?php echo ($vo["id"]); ?>"  target="_blank"><?php echo ($vo["title"]); ?></a> <span style="float: right"><?php echo ($vo["newsdate"]); ?></span></li><?php endforeach; endif; else: echo "" ;endif; ?>
-                <?php if(($count) > "10"): ?><li><a href="">更多···</a></li><?php endif; ?>
-                <!--<li><a href="annualMeeting.html" target="_blank">海德在线2015年会</a> <span style="float: right">2015-02-07</span></li>-->
-                <!--<li><a href="homeService.html" target="_blank">开呗2.0推出上门保养服务</a> <span style="float: right">2015-02-04</span></li>-->
-                <!--<li><a href="productRename.html" target="_blank">91车助手正式更名“开呗”</a> <span style="float: right">2015-01-17</span></li>-->
-                <!--<li><a href="carWash.html" target="_blank">1分钱洗车活动</a> <span style="float: right">2015-01-11</span></li>-->
-                <!--<li><a href="detection.html" target="_blank">1元钱检测活动</a> <span style="float: right">2015-01-11</span></li>-->
-                <!--<li><a href="presentation.html" target="_blank">开呗产品发布会</a> <span style="float: right">2014-12-18</span></li>-->
-                <!--<li><a href="kaibei.html" target="_blank">91车助手APP1.0盛大上线庆功晚宴</a> <span style="float: right">2014-11-29</span></li>-->
-                <!--<li><a href="shaoguang.html" target="_blank">绍光车业董事长何绍华先生莅临海德在线洽谈合作</a> <span style="float: right">2014-11-22</span></li>-->
-                <!--<li><a href="move.html" target="_blank">热烈庆祝海德在线乔迁之喜</a> <span style="float: right">2014-11-16</span></li>-->
-                <!--<li><a href="carFriends.html" target="_blank">91车助手车友会车友莅临海德在线参观</a> <span style="float: right">2014-12-05</span></li>-->
-                <!--<li><a href="dream.html" target="_blank">我有一个梦想———海德在线第一次公司战略级全员头脑风暴会议圆满落幕</a> <span style="float: right">2014-06-05</span></li>-->
+                <!--<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>-->
+                    <!--<li><a href="" class="news-list" data-id="<?php echo ($vo["id"]); ?>"  target="_blank"><?php echo ($vo["title"]); ?></a> <span style="float: right"><?php echo ($vo["newsdate"]); ?></span></li>-->
+                <!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
+                <!--<?php if(($count) > "10"): ?>-->
+                    <!--<li><a href="">更多···</a></li>-->
+                <!--<?php endif; ?>-->
+                <li><a href="annualMeeting.html" target="_blank">开呗上门保养 任性上线</a> <span style="float: right">2015-03-06</span></li>
+                <li><a href="annualMeeting.html" target="_blank">海德在线2015年会</a> <span style="float: right">2015-02-07</span></li>
+                <li><a href="homeService.html" target="_blank">开呗2.0推出上门保养服务</a> <span style="float: right">2015-02-04</span></li>
+                <li><a href="./productRename.html" target="_blank">91车助手正式更名“开呗”</a> <span style="float: right">2015-01-17</span></li>
+                <li><a href="carWash.html" target="_blank">1分钱洗车活动</a> <span style="float: right">2015-01-11</span></li>
+                <li><a href="detection.html" target="_blank">1元钱检测活动</a> <span style="float: right">2015-01-11</span></li>
+                <li><a href="presentation.html" target="_blank">开呗产品发布会</a> <span style="float: right">2014-12-18</span></li>
+                <li><a href="kaibei.html" target="_blank">91车助手APP1.0盛大上线庆功晚宴</a> <span style="float: right">2014-11-29</span></li>
+                <li><a href="shaoguang.html" target="_blank">绍光车业董事长何绍华先生莅临海德在线洽谈合作</a> <span style="float: right">2014-11-22</span></li>
+                <li><a href="move.html" target="_blank">热烈庆祝海德在线乔迁之喜</a> <span style="float: right">2014-11-16</span></li>
+                <li><a href="carFriends.html" target="_blank">91车助手车友会车友莅临海德在线参观</a> <span style="float: right">2014-12-05</span></li>
+                <li><a href="dream.html" target="_blank">我有一个梦想———海德在线第一次公司战略级全员头脑风暴会议圆满落幕</a> <span style="float: right">2014-06-05</span></li>
             </ul>
 
 
@@ -100,7 +104,7 @@
 
     
 
-    <link rel="stylesheet" type="text/css" href="/Public/Css/App/footer.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/Css/App/home/footer.css" />
 
 <div class="global-footer">
     <div class="global-fluid" >

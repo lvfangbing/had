@@ -10,28 +10,21 @@
 </head>
 <body style="background: #1ABC9C">
 <div class="container-fluid" >
-    <!--<div class="login-screen">-->
-    <!--<div class="login-icon">-->
-    <!--<img src="img/login/icon.png" alt="Welcome to Mail App" />-->
-    <!--<h4>Welcome to <small>Mail App</small></h4>-->
-    <!--</div>-->
-
-    <div id="login-form" class="login-form" style="width: 420px;height: 300px;">
+    <div id="login-form" class="login-form" style="width: 420px;height: 250px;">
         <form action="<?php echo U('Index/dealLogin');?>" method="post">
             <div class="form-group">
-                <input type="text" name="username" class="form-control login-field" value="" placeholder="Enter your name" id="login-name" />
+                <input type="text" name="username" class="form-control login-field" value="" placeholder="邮箱/手机号/QQ" id="login-name" />
                 <label class="login-field-icon fui-user" for="login-name"></label>
             </div>
             <div class="form-group">
-                <input type="password" name="passwords" class="form-control login-field" value="" placeholder="Password" id="login-pass" />
+                <input type="password" name="passwords" class="form-control login-field" value="" placeholder="请输入密码" id="login-pass" />
                 <label class="login-field-icon fui-lock" for="login-pass"></label>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-lg btn-block" href="#">Log in</button>
-            <a class="login-link" href="#">Lost your password?</a>
+            <button type="submit" class="btn btn-primary btn-lg btn-block" href="#"><strong>登录</strong></button>
+            <a class="login-link" href="#">忘记密码?</a>
         </form>
     </div>
-
     <!--</div>-->
 </div>
 <script type="text/javascript">

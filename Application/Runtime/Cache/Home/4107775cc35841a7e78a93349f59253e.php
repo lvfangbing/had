@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>海德在线</title>
-    <link rel="stylesheet" type="text/css" href="/Public/Css/App/header.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/Css/App/home/header.css" />
     <link rel="stylesheet" type="text/css" href="/Public/Css/Base/bootstrap/3.3.0/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="/Public/Css/App/public.css">
+    <link rel="stylesheet" type="text/css" href="/Public/Css/App/home/public.css">
     
-    <link rel="stylesheet" type="text/css" href="/Public/Css/App/company.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/Css/App/home/company.css" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,38 +24,36 @@
 <!--头部导航-->
 
     
-<div  class="global-fluid header-border-bottom">
+<div  class="global-fluid header-border-bottom" style="z-index: 999;">
     <div class="nav-container">
-        <div class="hadlink-logo"><a href="/"><img src="/Public/Images/hadlinkLOGO.png" alt="海德在在线" width="230" height="98"></a> </div>
+        <div class="hadlink-logo"><a href="/"><img src="/Public/Images/hadlinkLOGO.png" alt="海德在在线" width="230" height="100"></a> </div>
         <ul class="nav-bar">
             <li class="bottom-active"><a href="/" id="firstPage">首页</a> </li>
-            <li ><a href="/company" id="companyInfo">公司信息</a></li>
-            <li><a href="/news" id="news">新闻中心</a></li>
-            <li><a href="/enterpriseCulture">企业文化</a></li>
-            <li ><a href="/product">业务体系</a></li>
-            <li ><a href="/investor">投资者关系</a></li>
-            <li ><a href="/businessCooperation" id="cooperation">合作洽谈</a></li>
+            <li ><a href="<?php echo U('company/index');?>" id="companyInfo">公司信息</a></li>
+            <li><a href="<?php echo U('news/index');?>" id="news">新闻中心</a></li>
+            <li><a href="<?php echo U('EnterpriseCulture/index');?>">企业文化</a></li>
+            <li ><a href="<?php echo U('product/index');?>">业务体系</a></li>
+            <li ><a href="<?php echo U('investor/index');?>">投资者关系</a></li>
+            <li ><a href="<?php echo U('BusinessCooperation/index');?>" id="cooperation">合作洽谈</a></li>
         </ul>
-
     </div>
 </div>
 
 <!--主体内容-->
 
-    <div class="had-container">
-        <!--左侧导航-->
-        <div class="company-nav">
-            <ul>
-                <li id="js-comIntro"  ><a data-id="1" href="#companyIntro" > 公司介绍</a></li>
-                <li id="js-president" ><a data-id="2" href="#president" >总裁寄语</a></li>
-                <li id="js-devCourse" ><a data-id="3" href="#devCourse" >发展历程</a></li>
-                <li id="js-organization"><a data-id="4" href="#organization" >组织结构</a></li>
-                <li id="js-coreGroup" ><a data-id="5" href="#coreGroup" >核心团队</a></li>
-            </ul>
-        </div>
+    <!--左侧导航-->
+    <div id="company" class="company-nav" >
+        <div id="subIntro" class="nav-div active-font"><a  href="" class="">公司介绍</a></div>
+        <div id="subPresident" class="nav-div"><a  href="">总裁寄语</a></div>
+        <div id="subDev" class="nav-div"><a  href="">发展历程</a></div>
+        <div id="subOrganization" class="nav-div"><a  href="">组织结构</a></div>
+        <div id="subGroup" class="nav-div"><a  href="">核心团队</a></div>
+    </div>
+    <div class="had-container bg-white">
         <!--公司介绍-->
-        <div id="companyIntro" class="section-intro div-center" style="height: 540px;">
-            <div class="word-pic pic-center"  ><img src="/Public/Images/large.png" ></div>
+        <div class="pic-center" style="width: 1000px;" ><img src="/Public/Images/large.png" ></div>
+        <div id="companyIntro" class="section-intro div-center pd-20" style="height: 340px;">
+
             <h3 class="p-h3">公司介绍</h3>
             <p class="p-low">海德在线成立于2014年3月，是目前中国少数以构建汽车后市场生态产业链为己任的互联网公司，旗下“<font color="red"><a href="http://www.91czs.com" style="color: #ffa54a">开呗</a></font>”品牌、也是中国目前最具活力的车生活服务平台之一，总部位于年轻美丽而又充满激情与活力的深圳。</p>
 
@@ -71,7 +69,7 @@
 
         </div>
         <!--总裁寄语-->
-        <div id="president" class="section-ceo div-center"  style="margin-top: 40px;min-height: 1090px; ">
+        <div id="president" class="section-ceo div-center pd-20"  style="margin-top: 40px;height: 1000px; ">
             <h3 class="p-h3">总裁寄语</h3>
             <div class="word-pic pic-center"><img src="/Public/Images/ceo.png"></div>
             <div class="pic-intro pic-center">
@@ -108,19 +106,19 @@
 
         </div>
         <!--发展历程-->
-        <div id="devCourse" class="section-common div-center" style="height: 1400px;">
+        <div id="devCourse" class="section-common div-center pd-20" style="height: 1400px;">
             <h3 style="color: #ffa54a;">发展历程</h3>
             <img src="/Public/Images/dev-course.png" >
         </div>
         <!--组织架构-->
-        <div id="organization" class="section-common div-center" style="height: 1500px;">
+        <div id="organization" class="section-common div-center pd-20" style="height: 1500px;">
             <h3 style="color: #ffa54a;">组织架构</h3>
             <div class="pic-center" >
                 <img src="/Public/Images/organization.png">
             </div>
         </div>
         <!--核心团队-->
-        <div id="coreGroup" class="section-common div-center" style="min-height: 1750px;">
+        <div id="coreGroup" class="section-common div-center bg-white" style="min-height: 1750px;padding: 0 20px;">
             <h3 style="color: #ffa54a;padding-top: 20px;">核心团队</h3>
             <div class="person-show" >
                 <div class="show-title" >
@@ -342,7 +340,7 @@
 
     
 
-    <link rel="stylesheet" type="text/css" href="/Public/Css/App/footer.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/Css/App/home/footer.css" />
 
 <div class="global-footer">
     <div class="global-fluid" >
