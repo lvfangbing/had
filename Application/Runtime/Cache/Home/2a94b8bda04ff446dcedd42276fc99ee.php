@@ -25,9 +25,9 @@
 <!--头部导航-->
 
     
-<div  class="global-fluid header-border-bottom">
+<div  class="global-fluid header-border-bottom" style="z-index: 999;">
     <div class="nav-container">
-        <div class="hadlink-logo"><a href="/"><img src="/Public/Images/hadlinkLOGO.png" alt="海德在在线" width="230" height="98"></a> </div>
+        <div class="hadlink-logo"><a href="/"><img src="/Public/Images/hadlinkLOGO.png" alt="海德在在线" width="230" height="100"></a> </div>
         <ul class="nav-bar">
             <li class="bottom-active"><a href="/" id="firstPage">首页</a> </li>
             <li ><a href="<?php echo U('company/index');?>" id="companyInfo">公司信息</a></li>
