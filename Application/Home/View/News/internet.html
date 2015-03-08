@@ -6,108 +6,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>海德在线</title>
-    <link rel="stylesheet" href="css/public.css">
-    <link rel="stylesheet" href="css/newsmodule.css">
-    <link rel="stylesheet" href="Libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__CSS__/App/home/newsdetail.css">
+    <link rel="stylesheet" href="__CSS__/App/home/newsmodule.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/Base/bootstrap/3.3.0/css/bootstrap.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="__JS__/Lib/seajs/2.3.0/sea.js"></script>
+    <script type="text/javascript" src="__JS__/Conf/baseConfig.js"></script>
 </head>
 <body>
 <div class="global-nav" style="height: 60px;line-height: 60px;">
-    <div class="had-container">
-        <div class="nav-bar" style="height: 40px;width: 100%;line-height: 40px;margin-top:10px;">
-            <ul>
-                <li >
-                    <a href="index.html" id="firstPage">海德首页</a>
-                </li>
-                <li>
-                    <a href="companyInfo.html" id="copanyInfo">公司信息</a>
-                    <ul class="company-tab" style="height:220px;margin: 0;">
-                        <li> 公司介绍</a></li>
-                        <li> <a href="companyInfo.html#president" >总裁寄语</a></li>
-                        <li> <a href="companyInfo.html#devCourse" >发展历程</a></li>
-                        <li ><a href="companyInfo.html#organization" >组织结构</a></li>
-                        <li ><a href="companyInfo.html#coreGroup" >核心团队</a></li>
-                    </ul>
-                </li>
-                <li class="bottom-active" style="width: 120px;">
-                    <a href="news.html" id="news">新闻中心</a>
-                    <ul class="company-tab" style="height: 140px;padding-top: 10px;" >
-                        <li><a href="news.html#companyNews" > 公司新闻</a></li>
-                        <li><a href="news.html#industryInformation" >行业资讯</a></li>
-                        <li><a href="news.html#companyAnnounce" >企业发布</a></li>
-                    </ul>
-                </li>
-                <li style="width: 120px;">
-                    <a href="corporateCulture.html">企业文化</a>
-                    <ul class="company-tab" style="height: 380px;padding-top: 10px;">
-                        <li><a href="corporateCulture.html#corporateVision" > 企业愿景</a></li>
-                        <li><a href="corporateCulture.html#mission" >使命</a></li>
-                        <li><a href="corporateCulture.html#purpose" >宗旨</a></li>
-                        <li><a href="corporateCulture.html#value" >核心价值观</a></li>
-                        <li><a href="corporateCulture.html#culture" >文化品格</a></li>
-                        <li><a href="corporateCulture.html#product" >产品理念</a></li>
-                        <li><a href="corporateCulture.html#manage" >管理理念</a></li>
-                        <li><a href="corporateCulture.html#talent" >人才战略</a></li>
-                        <li><a href="corporateCulture.html#hadlink" >海德印象</a></li>
-                    </ul>
-                </li>
-                <li style="width: 120px;">
-                    <a href="businessSystem.html">业务体系</a>
-                    <ul class="company-tab" style="height: 180px;padding-top: 10px;">
-                        <li><a href="businessSystem.html#companyIntro" >开呗</a></li>
-                        <li><a href="businessSystem.html#president" >98车讯</a></li>
-                        <li><a href="businessSystem.html#devCourse" >深圳分公司</a></li>
-                        <li><a href="businessSystem.html#organization" >广州分公司</a></li>
-                    </ul>
-                </li>
-
-                <li style="width: 120px;">
-                    <a href="investor.html">投资者关系</a>
-                    <ul class="company-tab" style="height: 140px;padding-top: 10px;" >
-                        <li ><a href="investor.html#corporateNotice" > 投资章程</a></li>
-                        <li ><a href="investor.html#companyRunReport" >投资者关系</a></li>
-                        <li ><a href="investor.html#companyManage" >公司定期专栏</a></li>
-                        <!--<li ><a href="investor.html#companyother" >其他动态</a></li>-->
-                    </ul>
-                </li>
-                <li style="width: 130px;">
-                    <a href="cooperate.html" id="cooperation">合作洽谈</a>
-                    <ul class="company-tab" style="height: 105px;width: 130px;padding-top: 10px;">
-                        <li id="navheadquarters" style="width: 120px;" ><a href="cooperate.html#headquarters" > 联系我们</a></li>
-
-                        <li id="navtalentJoin" style="width: 120px;"><a href="cooperate.html#talentJoin" >招贤纳士</a></li>
-                        <!--<li id="navoperation" style="width: 120px;"><a href="cooperate.html#operation" >运营推广中心</a></li>-->
-                        <!--<li id="nav-business" style="width: 120px;"><a href="cooperate.html#business" >商务拓展中心</a></li>-->
-                        <!--<li id="navsupplyChain" style="width: 120px;"><a href="cooperate.html#supplyChain" >供应链管理中心</a></li>-->
-                        <!--<li id="navshenzhen" style="width: 120px;"><a href="cooperate.html#shenzhen" >深圳分公司</a></li>-->
-                        <!--<li id="navguangzhou" style="width: 120px;"><a href="cooperate.html#guangzhou" >广州分公司</a></li>-->
-                    </ul>
-                </li>
-
-            </ul>
-        </div>
-    </div>
+    <block name="header"><include file="News:header" /> </block>
 
 </div>
 <div class="had-container" >
     <div class="news-center">
-        <a href="news.html"><img src="images/newscenter.png"></a>
+        <a href="{:U('Index/index')}"><img src="__IMG__/newscenter.png"></a>
         <span>&nbsp;&nbsp;
-          <a class="bread-crumbs" href="news.html">  新闻中心</a>
+          <a class="bread-crumbs" href="{:U('News/index')}">  新闻中心</a>
             <span class="bread-crumbs">></span>
-            <a class="bread-crumbs" href="news.html#industryInformation">行业资讯</a>
+            <a class="bread-crumbs" href="{:U('News/index#companyNews')}">公司新闻</a>
         </span>
     </div>
     <div id="companyNews" class="section-news" style="min-height: 2800px; ">
         <h3 style="text-align:center">汽车后市场互联网思维,这7点你必须知道! </h3>
         <h4 style="text-align:center; color:#666">发布日期：2014-9-30</h4>
         <p>
-        <center><img src="images/after.jpg" width="600"></center>
+        <center><img src="__IMG__/after.jpg" width="600"></center>
         </p>
         <p class="p-low">
            汽车后市场这个巨大的利润场已成大势所向，大家都要来分一杯羹，你要怎么办？下面七点让你快速了解汽车后市场互联网。</p>
         <p class="p-low"> <strong>一、未来市场这么大，肯定有一块是你的。</strong></p>
         <p class="p-low"> 汽车实体店boss大部分还是以传统玩法进行中，选址——装修——营业——服务周边人群——不温不热状态——如果没有主推产品、过硬技术、高效率的服务，基本活不长。那么还有一部分boss再尝试或已经走在互联网的路上。以传统的营销策略上，增加互联网投放，营业额基本处于增长状态。</p>
-        <center><img src="images/after1.jpg" width="600"></center>
+        <center><img src="__IMG__/after1.jpg" width="600"></center>
         <p class="p-low">
             互联网的发展大家都看在眼里，互联网对各个行业的发展不能说不深远。别的暂且不论，我们先来看看互联网引动的巨大利润场。
         </p>
@@ -119,11 +54,11 @@
         <p class="p-low">
             而新车销量增速逐渐放缓，汽车产业链价值中枢将向后端转移。预计未来十年汽车后市场有望达到4-5 万亿的规模；同时，市场结构的变化将带来新的投资机会，有品牌、有性价比的第三方维修连锁值得持续关注。
         </p>
-        <center><img src="images/after2.jpg" width="600"></center>
+        <center><img src="__IMG__/after2.jpg" width="600"></center>
         <p class="p-low">
             假设一个车主一年花在汽车维修保养上的费用平均为1000元，如果车主愿意将其中的400元用于在线购买服务，那么五年后汽车后市场服务在线交易额的保守预测是1764亿。
         </p>
-        <center><img src="images/after4.jpg" width="600"></center>
+        <center><img src="__IMG__/after4.jpg" width="600"></center>
 
         <p class="p-low">
 
@@ -134,7 +69,7 @@
 
             11 月 3 日，淘宝联手北京、上海等 200 余城市线下超过 3 万汽修服务网点，进入“汽车后服务”市场，为国内 6000 万私家车主提供线上线下一体化的汽车维修到日常保养。届时，车主可直接在线购买各种汽车配件，并直接预约线下就近汽修服务点的相关服务。</p>
         <p class="p-low">&nbsp; &nbsp; 大佬来抢生意，打不过就钻空子，拼不过财力拼专业，借力打力也是盈利的好方式。且不说支付宝改变了大家依赖银行的习惯，大众点评改变了大家传统的生活方式，滴滴打车改变了大家出行的习惯，从网络发展至今，从PC互联网到移动互联网终端，已经出现了太多改变大家传统思想的产品。
-            <center><img src="images/after5.jpg" width="600"></center>
+            <center><img src="__IMG__/after5.jpg" width="600"></center>
         </p>
         <p class="p-low">
 
@@ -144,7 +79,7 @@
         <p class="p-low">
              <strong>三、汽车消费挑战机遇并存，我们来找主流人群。</strong>
         </p>
-        <center> <img src="images/after6.jpg" width="600"></center>
+        <center> <img src="__IMG__/after6.jpg" width="600"></center>
         <p class="p-low">手机网民5.27亿，智能手机高度普及，逐步进入移动互联网时代。人均周上网时间接近26小时并不断增加。看看数据，擦擦眼睛，商机在哪里呢？</p>
 
         <p class="p-low"><strong>四、移动互联时代等于social的时代。</strong></p>
@@ -182,7 +117,7 @@
         </p>
 
         <p class="p-low"></p>有了KOL，（KOL=Key Opinion Leader 有话语权的主要人群）网络营销做什么？
-        <center><img src="images/after7.jpg" width="600"></center>
+        <center><img src="__IMG__/after7.jpg" width="600"></center>
 
         <p class="p-low">
             <strong>五、车联网要借鉴移动互联网新思维，然后进行独创。</strong>
@@ -243,12 +178,12 @@
         </p>
         <p class="p-low">
             <strong>七、搞清概念搞产品，你要比别人更会炒这盘菜。</strong>
-            <center><img src="images/after8.jpg" width="600"></center>
+            <center><img src="__IMG__/after8.jpg" width="600"></center>
         </p>
         <p class="p-low">
             中国汽车后市场发展趋势是：
-            <center><img src="images/after9.jpg" width="600"></center>
-        <center><img src="images/after10.jpg" width="600"></center>
+            <center><img src="__IMG__/after9.jpg" width="600"></center>
+        <center><img src="__IMG__/after10.jpg" width="600"></center>
 
         </p>
         <p class="p-low">
@@ -270,85 +205,7 @@
 
 </div>
 <div class="global-fluid" style=" background: #666666;">
-    <div class="had-container" >
-        <div class="global-footer">
-            <div class="had-container">
-                <div class="section-one">
-                    <ul >
-                        <center><p class="title-font">企业核心价值</p></center>
-                        <li style="margin-top: 0;"><a href="corporateCulture.html#value" >激&nbsp;&nbsp;&nbsp;&nbsp;情</a></li>
-
-                        <li ><a href="corporateCulture.html#value" >创&nbsp;&nbsp;&nbsp;&nbsp;新</a></li>
-
-                        <li ><a href="corporateCulture.html#value" >价&nbsp;&nbsp;&nbsp;&nbsp;值</a></li>
-                    </ul>
-                </div>
-                <div class="section-two">
-                    <ul>
-                        <center><p class="title-font">公司信息</p></center>
-                        <li><a href="companyInfo.html#companyIntro" >海德简介</a></li>
-                        <li><a href="companyInfo.html#president" >总裁致辞</a></li>
-                        <li><a href="companyInfo.html#devCourse" >发展历程</a></li>
-                        <li><a href="companyInfo.html#organization">组织结构</a></li>
-                        <li><a href="companyInfo.html#coreGroup" >核心团队</a></li>
-                    </ul>
-                </div>
-                <div class="section-two">
-                    <ul>
-                        <center><p class="title-font">业务体系</p></center>
-                        <li><a href="businessSystem.html#kaiba" >开呗</a></li>
-                        <li><a href="businessSystem.html#carNews" >98车讯</a></li>
-                        <li><a href="businessSystem.html#shenzhenBranch" >深圳分公司</a></li>
-                        <li><a href="businessSystem.html#guangzhouBranch" >广州分公司</a></li>
-                    </ul>
-                </div>
-                <div class="section-two">
-                    <ul>
-                        <center><p class="title-font">企业文化</p></center>
-                        <li><a href="corporateCulture.html#corporateVision" >企业愿景</a></li>
-                        <li><a href="corporateCulture.html#mission" >企业使命</a></li>
-                        <li><a href="corporateCulture.html#purpose" >企业宗旨</a></li>
-                        <li><a href="corporateCulture.html#value" targetdiv="div5">核心价值观</a></li>
-                        <li><a href="corporateCulture.html#culture" targetdiv="div1">文化品格</a></li>
-                        <li><a href="corporateCulture.html#product" targetdiv="div2">产品理念</a></li>
-                        <li><a href="corporateCulture.html#talent" targetdiv="div4">人才策略</a></li>
-                        <li><a href="corporateCulture.html#hadlink" targetdiv="div5">海德印象</a></li>
-                    </ul>
-                </div>
-                <div class="section-two">
-                    <ul>
-                        <center><p class="title-font">投资者关系</p></center>
-                        <li><a href="investor.html#corporateNotice" >公司公告</a></li>
-                        <li><a href="investor.html#companyRunReport">经营报告</a></li>
-                        <li><a href="investor.html#companyManage">公司治理</a></li>
-                        <li><a href="investor.html#companyother">其他动态</a></li>
-                    </ul>
-                </div>
-                <div class="section-two">
-                    <ul>
-                        <center><p class="title-font">合作洽谈</p></center>
-                        <li><a href="cooperate.html#headquarters">海德在线</a></li>
-                        <li><a href="cooperate.html#talentJoin">招贤纳士</a></li>
-                        <li><a href="cooperate.html#operation">运行推广中心</a></li>
-                        <li><a href="cooperate.html#business" >商务拓展中心</a></li>
-                        <li><a href="cooperate.html#supplyChain" >供应链管理中心</a></li>
-                        <li><a href="cooperate.html#shenzhenBranch">深圳分公司</a></li>
-                        <li><a href="cooperate.html#guangzhou">广州分公司</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="had-container" style="float: left;">
-                <div class="footer-copyright" style="color: #ffffff">
-                    <div style="margin-top: 20px;"><center>
-                        <script type="text/javascript"> var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254129543'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol+ "s11.cnzz.com/z_stat.php%3Fid%3D1254129543%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
-                        <span style="color:#dcdcdc"><a href="javascript:void(0)">©2015 深圳市海德在线有限公司版权所有</a>  | <a href="http://www.miitbeian.gov.cn/">粤ICP备14066441号</a></span>
-                    </center>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <block name="header"><include file="Public:footer" /> </block>
 </div>
 
 </body>

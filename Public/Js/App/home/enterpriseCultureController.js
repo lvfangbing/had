@@ -13,47 +13,60 @@ define(function(require,exports,module){
         });
         $(window).scroll(function(){
             var top = $(document).scrollTop();
-            if(top >= 100){
-                $('.company-nav').css('top','0');
+            if(top >= 150){
                 slideUp.fadeIn(300);
             }else{
-                $('.company-nav').css('top',102);
                 slideUp.fadeOut(300);
             }
-            var a = $('.company-nav').find('a');
-            if(top >400){
-                basejs.setValue(a,1);
+            console.log(top);
+            if(top >0 && top < 1000){
+                basejs.setValue($('#js-corporateVision'));
             }
-            if(top >=900){
-                basejs.setValue(a,2);
+            if(top >=1000 && top <1200){
+                basejs.setValue($('#js-mission'));
             }
-            if(top >=1100){
-                basejs.setValue(a,3);
+            if(top >=1200 && top < 1300){
+                basejs.setValue($('#js-purpose'));
             }
-            if(top >=1300){
-                basejs.setValue(a,4);
+            if(top >=1300 && top <1900 ){
+                basejs.setValue($('#js-value'));
             }
-            if(top >=1800){
-                basejs.setValue(a,5);
+            if(top >=1900 && top < 3000 ){
+                basejs.setValue($('#js-culture'));
             }
-            if(top >=2800){
-                basejs.setValue(a,6);
+            if(top >=3000 && top < 3200){
+                basejs.setValue($('#js-product'));
             }
-            if(top >=3000){
-                basejs.setValue(a,7);
+            if(top >=3200 && top <3600){
+                basejs.setValue($('#js-manage'));
             }
-            if(top >=3300){
-                basejs.setValue(a,8);
+            if(top >=3600 && top < 4100){
+                basejs.setValue($('#js-talent'));
             }
-            if(top >=3800){
-                basejs.setValue(a,9);
+            if(top >=4100){
+                basejs.setValue($('#js-hadlink'));
             }
+
         })
+    }
+    function setPosition(selector){
+        var Width = document.body.clientWidth;
+        var leftWidth = (Width - 1000)/2;
+        var left = leftWidth + 1002;
+        var top = 200;
+        selector.css({'left':left,'top':top}).show().animate({
+        });
+        //console.log(selector.position().left )
     }
     var main = {
         base:function(){
             basejs.backTop();
+            $('html,body').animate({
+                scrollTop: '0px'
+            }, 1);
             enterpriseCulture();
+            basejs.nav_hover();
+            setPosition($('#enterprise'));
         }
     };
     module.exports = main ;

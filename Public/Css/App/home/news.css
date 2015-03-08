@@ -36,6 +36,7 @@
     text-align: left;
     line-height: 50px;
     border-bottom: 1px solid #dcdcdc;
+
     /*font-size: 14px;*/
 }
 .news-ul li a {
@@ -78,4 +79,9 @@
 }
 .text-over {
     overflow: hidden;
+}
+.news-date {
+    float: right;
+    position: relative;
+    right: 50px;
 }

@@ -3,7 +3,7 @@
     border-bottom: 1px  #808080;
     background: #eeeeee;
     /*box-shadow: 0 0 5px 0 #888888;*/
-     box-shadow: 0 0 5px 0 #DDD;
+    box-shadow: 0 0 5px 0 #DDD;
 }
 .header {
     height: 100px;
@@ -26,7 +26,7 @@
 .nav-bar {
     padding-top: 55px;
 }
-.nav-bar li {
+.nav-bar>li {
     list-style: none;
     float: left;
     width: 140px;
@@ -34,12 +34,13 @@
     border-right:1px solid #cccccc;
     text-align: center;
     line-height: 45px;
+    position: relative;
 }
-.nav-bar li:first-of-type {
+.nav-bar>li:first-of-type {
     width: 160px;
 }
 
-.nav-bar  a {
+.nav-bar a {
     display: block;
     /*width: 105px;*/
     /*height: 40px;*/
@@ -54,6 +55,9 @@
 .nav-bar >li:hover {
     /*background: #ff9326;*/
     border-bottom: 5px solid #ffa54a;
+}
+.nav-bar >li:hover>a {
+    color: #ffa54a;
 }
 .nav-bar li:last-of-type {
     border-right: 0;
@@ -82,3 +86,93 @@
 .sub-nav li:hover {
     background: #ff9326;
 }
+
+
+/*下拉列表*/
+.panInfo_box{
+    position: absolute;
+    /*top: 46px;*/
+
+    width: 140px;
+    background: #eeeeee;
+    z-index: 99900;
+    padding: 0px 10px;
+    display:none;
+    box-shadow: 0px 0px 10px 0px #999;
+    border: 1px solid #CCC;
+    /*border-top: 2px solid #ff9326;*/
+    opacity: 0.9;
+}
+.news_box {
+    position: absolute;
+    /*top: 46px;*/
+    height: 200px;
+    width: 140px;
+    background: #eeeeee;
+    z-index: 100;
+    padding: 0px 10px;
+    display:none;
+    box-shadow: 0px 0px 10px 0px #999;
+    border: 1px solid #CCC;
+    /*border-top: 2px solid #ff9326;*/
+    opacity: 0.9;
+}
+
+.panInfo_box .triangle {
+    bottom: -70px;
+    left: 0px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-width: 40px 69px 40px;
+    border-style: solid solid dashed solid;
+    border-color: #eeeeee #eeeeee transparent #eeeeee;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.panInfo_box .triangle_bdr {
+    bottom: -72px;
+    left: -1px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-width: 40px 70px 40px;
+    border-style: solid solid dashed solid;
+    border-color: #CCC #CCC transparent #CCC;
+    opacity: 0.9;
+    z-index: -1;
+    /*box-shadow: 0px 0px 10px 0px #999;*/
+}
+
+
+
+.panInfo_box ul{
+    padding: 0px;
+}
+.panInfo_box li {
+    list-style: none;
+    border-top:1px solid #CCC;
+}
+
+.panInfo_box li:first-child {
+    border:none;
+}
+
+.panInfo_box a{
+    color: #666;
+}
+
+.panInfo_box>li>a:hover {
+    color: #ffa54a;
+    text-decoration: none;
+
+}
+
+/*.nav-bar >li:hover .panInfo_box {
+    display: block;
+}*/
+
+

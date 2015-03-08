@@ -10,33 +10,41 @@ define(function(require,exports,module){
         $(window).scroll(function(){
             var top = $(document).scrollTop()
             if(top >= 100){
-                $('.investor-nav').css('top','0');
                 slideUp.fadeIn(300);
             }else{
-                $('.investor-nav').css('top',100);
                 slideUp.fadeOut(300);
             }
-            var a = $('.investor-nav').find('a');
+            console.log(top);
 
-            if(top >100){
-                basejs.setValue(a,1);
+            if(top >0 && top < 600){
+                basejs.setValue($('#subKaibei'));
             }
-            if(top >=400){
-                basejs.setValue(a,2);
+            if(top >=600 && top < 900){
+                basejs.setValue($('#subCarNews'));
             }
-            if(top >=800){
-                basejs.setValue(a,3);
+            if(top >=900){
+                basejs.setValue($('#subShenzhen'));
             }
-            if(top >=1100){
-                basejs.setValue(a,4);
-            }
-
         })
+    }
+    function setPosition(selector){
+        var Width = document.body.clientWidth;
+        var leftWidth = (Width - 1000)/2;
+        var left = leftWidth + 1000;
+        var top = 200;
+        selector.css({'left':left,'top':top}).show().animate({
+        });
+        //console.log(selector.position().left )
     }
     var main = {
         base:function(){
             basejs.backTop();
+            $('html,body').animate({
+                scrollTop: '0px'
+            }, 1);
             investorController();
+            setPosition($('#investor'));
+            basejs.nav_hover();
         }
     };
     module.exports = main ;

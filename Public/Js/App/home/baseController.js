@@ -14,23 +14,31 @@ define(function(require,exports,module){
             return false;
         });
     };
-    function setValue(Element,num){
-        Element.each(function(){
-            var id = $(this).data('id');
-            if(id == num){
-                $(this).css({'color':'#ffa54a','font-size':'20px'});
-                $(this).parent().next().find('a').css({'color':'#000','font-size':'14px'});
-                $(this).parent().prev().find('a').css({'color':'#000','font-size':'14px'});
-                return false;
+    function setValue(Element){
+        var sub = Element;
+        sub.addClass('active-font');
+        sub.siblings().each(function(){
+            if($(this).hasClass('active-font')){
+                $(this).removeClass('active-font');
             }
-        })
+        });
     };
+    function nav_hover(){
+        $('.nav-bar>li').hover(function() {
+            $(this).find('.panInfo_box').slideDown(300);
+        },function() {
+            $(this).find('.panInfo_box').stop().slideUp(300);
+        });
+    }
     var main = {
         base:function(){
             backTop();
+            nav_hover();
         },
         setValue:setValue,
-        backTop:backTop
+        backTop:backTop,
+        nav_hover:nav_hover
+
     };
     module.exports = main ;
 });

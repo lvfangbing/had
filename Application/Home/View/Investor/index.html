@@ -4,17 +4,16 @@
     <load href="__CSS__/App/home/investor.css" />
 </block>
 <block name="content">
-    <div class="had-container">
-        <div class="investor-nav">
-            <ul>
-                <li id="js-corporateNotice" ><a data-id="1" href="#corporateNotice" >投资章程</a></li>
-                <li id="js-companyRunReport"><a data-id="2" href="#companyRunReport" >投资者关系</a></li>
-                <li id="js-companyManage"><a data-id="3" href="#companyManage" >公司定期专栏</a></li>
-            </ul>
-        </div>
+    <div id="investor" class="company-nav" >
+        <div id="subKaibei" class="nav-div active-font"><a  href="{:U('index#corporateNotice')}" class="">投资章程</a></div>
+        <div id="subCarNews" class="nav-div"><a  href="{:U('index#companyRunReport')}">投资者关系</a></div>
+        <div id="subShenzhen" class="nav-div"><a  href="{:U('index#companyManage')}">公司定期专栏</a></div>
+        <!--<div id="subGuangzhou" class="nav-div"><a  href="">广州分公司</a></div>-->
+    </div>
+    <div class="had-container bg-white">
+        <div class="pic-center"><img src="__IMG__/inventor.png"></div>
         <!--公司公告-->
-        <div id="corporateNotice" class="section-common div-center" style="height: 500px;">
-            <div><img src="__IMG__/inventor.png"></div>
+        <div id="corporateNotice" class="section-common div-center pd-20" style="height: 300px;">
             <h3 style="color: #ffa54a;margin-top: 50px;">投资章程</h3>
             正在建设中，敬请期待！
             <!--<address>-->
@@ -39,12 +38,12 @@
 
         </div>
         <!--经营报告-->
-        <div id="companyRunReport" class="section-common div-center" style="min-height: 300px;">
+        <div id="companyRunReport" class="section-common div-center pd-20" style="min-height: 300px;">
             <h3 style="color: #ffa54a;margin-top: 50px;">投资者关系</h3>
             正在建设中，敬请期待！
         </div>
         <!--公司治理-->
-        <div id="companyManage" class="section-common div-center" style="min-height: 300px;">
+        <div id="companyManage" class="section-common div-center pd-20" style="min-height: 300px;">
             <h3 style="color: #ffa54a;margin-top: 50px;">公司定期专栏</h3>
             正在建设中，敬请期待！
         </div>

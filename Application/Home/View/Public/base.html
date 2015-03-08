@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>海德在线</title>
+
     <load href="__CSS__/App/home/header.css" />
     <link rel="stylesheet" type="text/css" href="__CSS__/Base/bootstrap/3.3.0/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="__CSS__/App/home/public.css">
@@ -22,13 +23,16 @@
 </head>
 <body>
 <!--头部导航-->
+
 <block name="header">
     <include file="Public:header" />
 </block>
 <!--主体内容-->
+<div id="contentContainer">
 <block name="content">
 
 </block>
+</div>
 <!--底部版权-->
 <block name="footer">
     <include file="Public:footer" />

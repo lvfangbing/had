@@ -19,6 +19,7 @@ define(function(require,exports,module){
         });
         $(window).scroll(function(){
             var top = $(document).scrollTop();
+            console.log(top);
             if(top >= 150){
                 $('.news-nav').css('top','0');
                 slideUp.fadeIn(300);
@@ -26,22 +27,51 @@ define(function(require,exports,module){
                 $('.news-nav').css('top',102);
                 slideUp.fadeOut(300);
             }
-            var a = $('.news-nav').find('a');
-            if(top >200){
-                basejs.setValue(a,1);
+            if(top > -1){
+                setPosition($('#news-nav'));
             }
-            if(top >=400){
-                basejs.setValue(a,2);
+            if(top >0 && top < 900){
+                var sub = $('#subIntro');
+                sub.addClass('active-font');
+                sub.siblings().each(function(){
+                    if($(this).hasClass('active-font')){
+                        $(this).removeClass('active-font');
+                    }
+                });
             }
-            if(top >=800){
-                basejs.setValue(a,3);
+            if(top >=900 && top < 1000){
+                var sub = $('#subPresident');
+                sub.prev().removeClass('active-font');
+                sub.addClass('active-font');
+                sub.next().removeClass('active-font');
+            }
+            if(top >=1010){
+                var sub = $('#subDev');
+                sub.prev().removeClass('active-font');
+                sub.addClass('active-font');
+                sub.next().removeClass('active-font');
             }
         });
     }
+    function setPosition(selector){
+        var Width = document.body.clientWidth;
+        var leftWidth = (Width - 1000)/2;
+        var left = leftWidth + 997;
+        var top = 200;
+        selector.css({'left':left,'top':top}).show().animate({
+        });
+        //console.log(selector.position().left )
+    }
+
     var main = {
         base:function(){
             basejs.backTop();
             news();
+            $('html,body').animate({
+                scrollTop: '0px'
+            }, 1);
+            setPosition($('#news-nav'));
+            basejs.nav_hover();
         }
     };
     module.exports = main ;

@@ -11,35 +11,44 @@ define(function(require,exports,module){
         $(window).scroll(function(){
             var top = $(document).scrollTop()
             if(top >= 100){
-                $('.business-nav').css('top','0');
                 slideUp.fadeIn(100);
             }else{
-                $('.business-nav').css('top',102);
                 slideUp.fadeOut(300);
             }
             var a = $('.business-nav').find('a');
 
-            if(top >100){
-                basejs.setValue(a,1);
+            if(top >0 && top < 700){
+                basejs.setValue($('#subKaibei'));
             }
-            if(top >=700){
-                basejs.setValue(a,2)
+            if(top >=700 && top < 1000){
+                basejs.setValue($('#subCarNews'));
             }
-            if(top >=1000){
-                basejs.setValue(a,3)
+            if(top >=1000 && top < 1400){
+                basejs.setValue($('#subShenzhen'));
             }
             if(top >=1400){
-                basejs.setValue(a,4)
-            }
-            if(top >=1650){
-                basejs.setValue(a,5)
+                basejs.setValue($('#subGuangzhou'));
             }
         })
+    }
+    function setPosition(selector){
+        var Width = document.body.clientWidth;
+        var leftWidth = (Width - 1000)/2;
+        var left = leftWidth + 1000;
+        var top = 200;
+        selector.css({'left':left,'top':top}).show().animate({
+        });
+        //console.log(selector.position().left )
     }
     var main = {
         base:function(){
             basejs.backTop();
+            $('html,body').animate({
+                scrollTop: '0px'
+            }, 1);
             product();
+            setPosition($('#product'));
+            basejs.nav_hover();
         }
     };
     module.exports = main ;

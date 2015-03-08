@@ -24,3 +24,46 @@ body {
     color: #ffa54a;
     margin-top: 40px;
 }
+.company-nav {
+    display: none;
+    position: fixed;
+    z-index: 10;
+}
+.nav-div {
+    width: 105px;
+    height: 50px;
+    background: url('../../../Images/bookmark.png');
+    margin-top: 5px;
+    /*border-radius:8px ;*/
+    text-align: center;
+    line-height: 50px;
+}
+.nav-div a {
+    color: #999999;
+}
+.nav-div a:hover {
+    text-decoration: none;
+}
+.pd-20 {
+    padding: 0 20px;
+}
+.active-font {
+    color: #ffa54a;
+    font-size: 20px;
+    width: 135px;
+}
+.active-font a {
+    color: #ffa54a;
+}
+.bg-white {
+    background: #ffffff;
+}
+.pd-20 {
+    padding: 0 20px;
+}
+.pic-center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    z-index: 0;
+}

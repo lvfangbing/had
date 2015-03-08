@@ -4,12 +4,108 @@
         <div class="hadlink-logo"><a href="__ROOT__/"><img src="__IMG__/hadlinkLOGO.png" alt="海德在在线" width="230" height="100"></a> </div>
         <ul class="nav-bar">
             <li class="bottom-active"><a href="__ROOT__/" id="firstPage">首页</a> </li>
-            <li ><a href="{:U('company/index')}" id="companyInfo">公司信息</a></li>
-            <li><a href="{:U('news/index')}" id="news">新闻中心</a></li>
-            <li><a href="{:U('EnterpriseCulture/index')}">企业文化</a></li>
-            <li ><a href="{:U('product/index')}">业务体系</a></li>
-            <li ><a href="{:U('investor/index')}">投资者关系</a></li>
-            <li ><a href="{:U('BusinessCooperation/index')}" id="cooperation">合作洽谈</a></li>
+            <li ><a href="{:U('company/index')}" id="companyInfo">公司信息</a>
+                <!--<div class="sub-div5">-->
+                    <!--<ul>-->
+                        <!--<li><a href=""></a></li>-->
+                        <!--<li><a href=""></a></li>-->
+                        <!--<li><a href=""></a></li>-->
+                        <!--<li><a href=""></a></li>-->
+                        <!--<li><a href=""></a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+                <div class="panInfo_box" style=" height: 200px;">
+                    <ul>
+                        <li><a href="{:U('company/index#companyIntro')}">公司介绍</a></li>
+                        <li><a href="{:U('company/index#president')}">总裁寄语</a></li>
+                        <li><a href="{:U('company/index#devCourse')}">发展历程</a></li>
+                        <li><a href="{:U('company/index#organization')}">组织结构</a></li>
+                        <li><a href="{:U('company/index#coreGroup')}">核心团队</a></li>
+                    </ul>
+                    <div class="imcss">
+                        <span class="triangle_bdr"></span>
+                        <span class="triangle"></span>
+                    </div>
+                </div>
+            </li>
+
+            <li><a href="{:U('news/index')}" id="news">新闻中心</a>
+                <div class="panInfo_box" style="height: 120px;">
+                    <ul>
+                        <li><a href="{:U('news/index#companyNews')}">公司新闻</a></li>
+                        <li><a href="{:U('news/index#industryInformation')}">行业新闻</a></li>
+                        <li><a href="{:U('news/index#companyAnnounce')}">企业发布</a></li>
+                        <!--<li><a href="{:U('company/index#organization')}">组织结构</a></li>-->
+                        <!--<li><a href="{:U('company/index#coreGroup')}">核心团队</a></li>-->
+                    </ul>
+                    <div class="imcss">
+                        <span class="triangle_bdr"></span>
+                        <span class="triangle"></span>
+                    </div>
+                </div>
+            </li>
+            <li><a href="{:U('Culture/index')}">企业文化</a>
+                <div class="panInfo_box" style="height: 400px;">
+                    <ul>
+                        <li><a href="{:U('Culture/index#corporateVision')}" > 企业愿景</a></li>
+                        <li><a href="{:U('Culture/index#mission')}" >使命</a></li>
+                        <li><a href="{:U('Culture/index#purpose')}" >宗旨</a></li>
+                        <li><a href="{:U('Culture/index#value')}" >核心价值观</a></li>
+                        <li><a href="{:U('Culture/index#culture')}" >文化品格</a></li>
+                        <li><a href="{:U('Culture/index#product')}" >产品理念</a></li>
+                        <li><a href="{:U('Culture/index#manage')}" >管理理念</a></li>
+                        <li><a href="{:U('Culture/index#talent')}" >人才战略</a></li>
+                        <li><a href="{:U('Culture/index#hadlink')}" >海德印象</a></li>
+                    </ul>
+                    <div class="imcss">
+                        <span class="triangle_bdr"></span>
+                        <span class="triangle"></span>
+                    </div>
+                </div>
+            </li>
+            <li ><a href="{:U('product/index')}">业务体系</a>
+                <div class="panInfo_box" style="height: 180px;">
+                    <ul>
+                        <li><a href="{:U('product/index#kaiba')}" >开呗</a></li>
+                        <li><a href="{:U('product/index#carNews')}" >98车讯</a></li>
+                        <li><a href="{:U('product/index#shenzhenBranch')}" >深圳分公司</a></li>
+                        <li><a href="{:U('product/index#guangzhouBranch')}" >广州分公司</a></li>
+                    </ul>
+                    <div class="imcss">
+                        <span class="triangle_bdr"></span>
+                        <span class="triangle"></span>
+                    </div>
+                </div>
+            </li>
+            <li >
+                <a href="{:U('investor/index')}">投资者关系</a>
+                <div class="panInfo_box" style="height: 120px;">
+                    <ul>
+                        <li ><a href="{:U('investor/index#corporateNotice')}" > 投资章程</a></li>
+                        <li  ><a href="{:U('investor/index#companyRunReport')}" >投资者关系</a></li>
+                        <li  ><a href="{:U('investor/index#companyManage')}" >公司定期专栏</a></li>
+                    </ul>
+                    <div class="imcss">
+                        <span class="triangle_bdr"></span>
+                        <span class="triangle"></span>
+                    </div>
+                </div>
+
+            </li>
+            <li >
+                <a href="{:U('Cooperation/index')}" id="cooperation">合作洽谈</a>
+                <div class="panInfo_box" style="height: 70px;">
+                    <ul>
+                        <li ><a href="{:U('Cooperation/index#headquarters')}" > 投资章程</a></li>
+                        <li  ><a href="{:U('Cooperation/index#talentJoin')}" >投资者关系</a></li>
+
+                    </ul>
+                    <div class="imcss">
+                        <span class="triangle_bdr"></span>
+                        <span class="triangle"></span>
+                    </div>
+                </div>
+            </li>
         </ul>
     </div>
 </div>

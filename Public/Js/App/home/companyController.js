@@ -5,15 +5,22 @@ define(function(require,exports,module){
     var $ = require('jquery');
     var slideUp = $('#slideUp');
     var basejs = require('baseController.js');
-
+    //var contentContainer = $('#contentContainer');
     function popover(){
         var bootstrap = require('bootstrap');
         $("[data-toggle='popover']").popover();
         $(document).on('mouseout','.omit',function(){
-            $(".popover").hide();
+            $(".popover").delay(800).hide();
+        }).on('mouseover','.popover',function(){
+            $(this).show();
+        }).on('mouseout','.popover',function(){
+            $(this).hide();
         });
+
     }
+
     function setPosition(selector){
+        var top = $(document).scrollTop();
         var Width = document.body.clientWidth;
         var leftWidth = (Width - 1000)/2;
         var left = leftWidth + 997;
@@ -21,17 +28,32 @@ define(function(require,exports,module){
         selector.css({'left':left,'top':top}).show().animate({
 
         });
+        if(top >0 && top < 650 ){
+            var sub = $('#subIntro');
+            basejs.setValue(sub);
 
+        }
+        if(top >=650 && top < 1600){
+            var sub = $('#subPresident');
+            basejs.setValue(sub);
+
+        }
+        if(top >=1680 && top < 3010){
+            var sub = $('#subDev');
+            basejs.setValue(sub);
+        }
+        if(top >=3010 && top <4580){
+            var sub = $('#subOrganization');
+            basejs.setValue(sub);
+        }
+        if(top >=4580){
+            var sub = $('#subGroup');
+            basejs.setValue(sub);
+        }
     }
 
 
     function scroll(){
-        $('.nav-div').find('a').mouseover(function (){
-            $(this).addClass("active-font");
-        });
-        $('.nav-div').find('a').mouseout(function(){
-            $(this).removeClass("active-font");
-        });
         $(document).scroll(function(){
             var top = $(document).scrollTop();
             if(top >= 150){
@@ -39,40 +61,29 @@ define(function(require,exports,module){
             }else{
                 slideUp.fadeOut(300);
             }
-            console.log(top);
+            //console.log(top);
             var a = $('.company-nav').find('a');
-            if(top > -1){
-                setPosition($('#company'));
-            }
             if(top >0 && top < 650 ){
                 var sub = $('#subIntro');
-                sub.addClass('active-font');
-                sub.next().removeClass('active-font');
+                basejs.setValue(sub);
 
             }
-            if(top >=650 && top < 1750){
+            if(top >=650 && top < 1680){
                 var sub = $('#subPresident');
-                sub.prev().removeClass('active-font');
-                sub.addClass('active-font');
-                sub.next().removeClass('active-font');
+                basejs.setValue(sub);
 
             }
-            if(top >=1760 && top < 3100){
+            if(top >=1680 && top < 3080){
                 var sub = $('#subDev');
-                sub.prev().removeClass('active-font');
-                sub.addClass('active-font');
-                sub.next().removeClass('active-font');
+                basejs.setValue(sub);
             }
-            if(top >=3120 && top <4700){
+            if(top >=3080 && top <4580){
                 var sub = $('#subOrganization');
-                sub.prev().removeClass('active-font');
-                sub.addClass('active-font');
-                sub.next().removeClass('active-font');
+                basejs.setValue(sub);
             }
-            if(top >=4700){
+            if(top >=4580){
                 var sub = $('#subGroup');
-                sub.prev().removeClass('active-font');
-                sub.addClass('active-font');
+                basejs.setValue(sub);
             }
         })
     }
@@ -80,12 +91,12 @@ define(function(require,exports,module){
         base:function(){
             basejs.backTop();
             popover();
-            scroll();
+            $('html,body').animate({
+                scrollTop: '0px'
+            }, 1);
             setPosition($('#company'));
-            $(document).scroll(function(){
-
-
-            })
+            scroll();
+            basejs.nav_hover();
         }
     };
     module.exports = main ;

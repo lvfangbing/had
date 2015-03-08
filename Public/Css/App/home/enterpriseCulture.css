@@ -1,34 +1,34 @@
-.company-nav {
-    width: 120px;
-    min-height: 200px;
-    background: #ececec;
-    position: fixed;
-    top: 102px;
+/*.company-nav {*/
+    /*width: 120px;*/
+    /*min-height: 200px;*/
+    /*background: #ececec;*/
+    /*position: fixed;*/
+    /*top: 102px;*/
 
-}
-.company-nav li {
-    width: 120px;
-    height: 35px;
-    margin-left: -40px;
-    line-height: 35px;
-    text-align: center;
-    list-style: none;
-    margin-top: 5px;
-}
-.company-nav li:hover{
-    background: #ff9326;
-}
-.company-nav a {
+/*}*/
+/*.company-nav li {*/
     /*width: 120px;*/
     /*height: 35px;*/
-    color: #2C3E50;
-    text-decoration: none;
-}
-.company-nav a:hover {
-    cursor: pointer;
+    /*margin-left: -40px;*/
+    /*line-height: 35px;*/
+    /*text-align: center;*/
+    /*list-style: none;*/
+    /*margin-top: 5px;*/
+/*}*/
+/*.company-nav li:hover{*/
+    /*background: #ff9326;*/
+/*}*/
+/*.company-nav a {*/
+    /*width: 120px;*/
+    /*height: 35px;*/
+    /*color: #2C3E50;*/
+    /*text-decoration: none;*/
+/*}*/
+/*.company-nav a:hover {*/
+    /*cursor: pointer;*/
     /*background: #ffa54a;*/
-    text-decoration: none;
-}
+    /*text-decoration: none;*/
+/*}*/
 .core-content {
     width: 100%;
     float: left;
@@ -50,4 +50,11 @@
 .pic-scale-y {
     width: 98%;
     height: 98%;
+}
+.pic-position {
+    width: 27%;
+    float: right;
+    padding-top: 25px;
+    position: relative;
+    right: 100px;
 }

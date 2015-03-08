@@ -5,15 +5,15 @@
 <block name="content">
     <!--左侧导航-->
     <div id="company" class="company-nav" >
-        <div id="subIntro" class="nav-div active-font"><a  href="" class="">公司介绍</a></div>
-        <div id="subPresident" class="nav-div"><a  href="">总裁寄语</a></div>
-        <div id="subDev" class="nav-div"><a  href="">发展历程</a></div>
-        <div id="subOrganization" class="nav-div"><a  href="">组织结构</a></div>
-        <div id="subGroup" class="nav-div"><a  href="">核心团队</a></div>
+        <div id="subIntro" class="nav-div active-font"><a  href="{:U('index#companyIntro')}" class="">公司介绍</a></div>
+        <div id="subPresident" class="nav-div"><a  href="{:U('index#president')}">总裁寄语</a></div>
+        <div id="subDev" class="nav-div"><a  href="{:U('index#devCourse')}">发展历程</a></div>
+        <div id="subOrganization" class="nav-div"><a  href="{:U('index#organization')}">组织结构</a></div>
+        <div id="subGroup" class="nav-div"><a  href="{:U('index#coreGroup')}">核心团队</a></div>
     </div>
     <div class="had-container bg-white">
         <!--公司介绍-->
-        <div class="pic-center" style="width: 1000px;" ><img src="__IMG__/large.png" ></div>
+        <div class="pic-center" style="width: 1000px;z-index: 0" ><img src="__IMG__/large.png" alt=""  style="z-index: 0" ></div>
         <div id="companyIntro" class="section-intro div-center pd-20" style="height: 340px;">
 
             <h3 class="p-h3">公司介绍</h3>

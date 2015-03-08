@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>海德在线</title>
+
     <link rel="stylesheet" type="text/css" href="/Public/Css/App/home/header.css" />
     <link rel="stylesheet" type="text/css" href="/Public/Css/Base/bootstrap/3.3.0/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/Public/Css/App/home/public.css">
@@ -23,13 +24,38 @@
 <body>
 <!--头部导航-->
 
+
     
-<div  class="global-fluid header-border-bottom">
+<div  class="global-fluid header-border-bottom" style="z-index: 999;">
     <div class="nav-container">
-        <div class="hadlink-logo"><a href="/"><img src="/Public/Images/hadlinkLOGO.png" alt="海德在在线" width="230" height="98"></a> </div>
+        <div class="hadlink-logo"><a href="/"><img src="/Public/Images/hadlinkLOGO.png" alt="海德在在线" width="230" height="100"></a> </div>
         <ul class="nav-bar">
             <li class="bottom-active"><a href="/" id="firstPage">首页</a> </li>
-            <li ><a href="<?php echo U('company/index');?>" id="companyInfo">公司信息</a></li>
+            <li ><a href="<?php echo U('company/index');?>" id="companyInfo">公司信息</a>
+                <!--<div class="sub-div5">-->
+                    <!--<ul>-->
+                        <!--<li><a href=""></a></li>-->
+                        <!--<li><a href=""></a></li>-->
+                        <!--<li><a href=""></a></li>-->
+                        <!--<li><a href=""></a></li>-->
+                        <!--<li><a href=""></a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+                <div class="panInfo_box">
+                    <ul>
+                        <li><a href="<?php echo U('company/index#companyIntro');?>">公司介绍</a></li>
+                        <li><a href="<?php echo U('company/index#president');?>">总裁寄语</a></li>
+                        <li><a href="<?php echo U('company/index#devCourse');?>">发展历程</a></li>
+                        <li><a href="<?php echo U('company/index#organization');?>">组织结构</a></li>
+                        <li><a href="<?php echo U('company/index#coreGroup');?>">核心团队</a></li>
+                    </ul>
+                    <div class="imcss">
+                        <span class="triangle_bdr"></span>
+                        <span class="triangle"></span>
+                    </div>
+                </div>
+            </li>
+
             <li><a href="<?php echo U('news/index');?>" id="news">新闻中心</a></li>
             <li><a href="<?php echo U('EnterpriseCulture/index');?>">企业文化</a></li>
             <li ><a href="<?php echo U('product/index');?>">业务体系</a></li>
@@ -40,24 +66,24 @@
 </div>
 
 <!--主体内容-->
+<div id="contentContainer">
 
-    <div class="had-container">
-        <div class="company-nav">
-            <ul>
-                <li id="js-corporateVision"><a data-id="1" href="#corporateVision" > 企业愿景</a></li>
-                <li id="js-mission"><a data-id="2" href="#mission" >使命</a></li>
-                <li id="js-purpose"><a data-id="3" href="#purpose" >宗旨</a></li>
-                <li id="js-value"><a data-id="4" href="#value" >核心价值观</a></li>
-                <li id="js-culture"><a data-id="5" href="#culture" >文化品格</a></li>
-                <li id="js-product"><a data-id="6" href="#product" >产品理念</a></li>
-                <li id="js-manage"><a data-id="7" href="#manage" >管理理念</a></li>
-                <li id="js-talent"><a data-id="8" href="#talent" >人才战略</a></li>
-                <li id="js-hadlink"><a data-id="9" href="#hadlink" >海德印象</a></li>
-            </ul>
-        </div>
+    <div id="enterprise" class="company-nav" >
+        <div id="js-corporateVision" class="nav-div active-font"><a  href="<?php echo U('index#corporateVision');?>" class="">企业愿景</a></div>
+        <div id="js-mission" class="nav-div"><a  href="<?php echo U('index#mission');?>">使命</a></div>
+        <div id="js-purpose" class="nav-div"><a  href="<?php echo U('index#purpose');?>">宗旨</a></div>
+        <div id="js-value" class="nav-div"><a  href="<?php echo U('index#value');?>">核心价值观</a></div>
+        <div id="js-culture" class="nav-div"><a  href="<?php echo U('index#culture');?>">文化品格</a></div>
+        <div id="js-product" class="nav-div"><a  href="<?php echo U('index#product');?>">产品理念</a></div>
+        <div id="js-manage" class="nav-div"><a  href="<?php echo U('index#manage');?>">管理理念</a></div>
+        <div id="js-talent" class="nav-div"><a  href="<?php echo U('index#talent');?>">人才战略</a></div>
+        <div id="js-hadlink" class="nav-div"><a  href="<?php echo U('index#hadlink');?>">海德印象</a></div>
+    </div>
+    <div class="pic-center"><img src="/Public/Images/first.png"></div>
+    <div class="had-container bg-white">
         <!--企业愿景-->
-        <div id="corporateVision" class="section-common div-center" style="min-height: 780px;">
-            <div><img src="/Public/Images/first.png"></div>
+        <div id="corporateVision" class="section-common div-center pd-20" style="min-height: 780px;">
+
             <h3 style="color: #ffa54a;padding-top: 25px;">企业愿景</h3>
             <br>
             <p style="font-size: 20px;">构建汽车全生命周期线上线下贯通的生态产业链 </p>
@@ -65,28 +91,28 @@
 
         </div>
         <!--使命-->
-        <div id="mission" class="section-common div-center" style="min-height: 150px;">
+        <div id="mission" class="section-common div-center pd-20" style="min-height: 150px;">
             <div style="float: left"><h3 style="color: #ffa54a;padding-top: 15px;">企业使命</h3>
                 <br>
                 <p style="font-size: 20px;">让移动科技改变汽车本地生活 </p>
             </div>
-            <div style="width: 27%;float: right;padding-top: 25px;">
+            <div class="pic-position">
                 <img src="/Public/Images/mission.png">
             </div>
         </div>
         <!--宗旨-->
-        <div id="purpose" class="section-common div-center" style="min-height: 150px;">
+        <div id="purpose" class="section-common div-center pd-20" style="min-height: 150px;">
             <div style="float: left"><h3 style="color: #ffa54a;padding-top: 15px;">企业宗旨</h3>
                 <br>
                 <p style="font-size: 20px;">海纳百川、德行天下 </p>
             </div>
-            <div style="width: 27%;float: right;padding-top: 25px;">
+            <div class="pic-position">
                 <img src="/Public/Images/purpose.png">
             </div>
 
         </div>
         <!--核心价值观-->
-        <div id="value" class="section-common div-center" style="height: 570px;">
+        <div id="value" class="section-common div-center pd-20" style="height: 570px;">
             <h3 style="color: #ffa54a;padding-top: 15px;">核心价值观</h3>
             <!--激情-->
             <div class="core-content">
@@ -116,7 +142,7 @@
             </div>
         </div>
         <!--文化品格-->
-        <div id="culture" class="section-common div-center" style="height: 1150px;">
+        <div id="culture" class="section-common div-center pd-20" style="height: 1150px;">
             <h3 style="color: #ffa54a;padding-top: 15px;">文化品格</h3>
             <div class="core-content" style="margin-top: 30px;">
                 <div class="core-pic"><img src="/Public/Images/share.png"></div>
@@ -162,13 +188,13 @@
 
         </div>
         <!--产品理念-->
-        <div id="product" class="section-common div-center" style="height: 170px;">
+        <div id="product" class="section-common div-center pd-20" style="height: 170px;">
             <h3 style="color: #ffa54a;padding-top: 25px;">产品理念</h3>
             <p style="color: #ffa54a;font-size: 18px;">把用户体验做到极致，超出用户期望的价值体验</p>
             <p>海德在线永远把用户放在首位，研发出让用户尖叫的产品，是我们不倦的追求。</p>
         </div>
         <!--管理理念-->
-        <div id="manage" class="section-common div-center" style="height: 380px;">
+        <div id="manage" class="section-common div-center pd-20" style="height: 380px;">
             <h3 style="color: #ffa54a;padding-top: 15px;">管理理念</h3>
             <p style="color: #ffa54a;font-size: 18px;">以人为本,结果导向</p>
             <p>海德在线永远把用户放在首位，研发出让用户尖叫的产品，是我们不倦的追求。</p>
@@ -215,7 +241,7 @@
 
         </div>
         <!--人才战略-->
-        <div id="talent" class="section-common div-center" style="height: 480px;">
+        <div id="talent" class="section-common div-center pd-20" style="height: 480px;">
             <h3 style="color: #ffa54a;padding-top: 20px;">人才战略</h3>
             <p style="color: #ffa54a;font-size: 18px;">1）核心职能——资深化 </p>
             <p>高层团队全部具有资深互联网行业知名企业背景（阿里、腾讯、百度、京东、美团、猫屋等） </p>
@@ -233,7 +259,7 @@
 
         </div>
         <!--海德印象-->
-        <div id="hadlink" class="section-common div-center" style="min-height: 550px;">
+        <div id="hadlink" class="section-common div-center pd-20" style="min-height: 550px;">
             <h3 style="color: #ffa54a;padding-top: 15px;">海德印象</h3>
             <div class="column-pic" style="margin: 0" >
                 <img class="pic-scale-y" src="/Public/Images/celebrate03.jpg" alt="2015年会聚餐剪影">
@@ -261,7 +287,7 @@
             </div>
         </div>
         <!--高压线-->
-        <div id="forbid" class="section-common div-center" style="height: 300px;display: none">
+        <div id="forbid" class="section-common div-center pd-20" style="height: 300px;display: none">
             <h3 style="color: #ffa54a;">高压线</h3>
             <ul>
                 <li>不得从事与本公司工作无关的其他任何事情 </li>
@@ -275,6 +301,7 @@
 
     </div>
 
+</div>
 <!--底部版权-->
 
     
@@ -289,59 +316,59 @@
                     <div class="section-one">
                         <ul >
                             <center><p class="title-font">企业核心价值</p></center>
-                            <li style="margin-top: 0;"><a href="corporateCulture.html#value" >激&nbsp;&nbsp;&nbsp;&nbsp;情</a></li>
+                            <li style="margin-top: 0;"><a href="<?php echo U('EnterpriseCulture/index#value');?>" >激&nbsp;&nbsp;&nbsp;&nbsp;情</a></li>
 
-                            <li ><a href="corporateCulture.html#value" >创&nbsp;&nbsp;&nbsp;&nbsp;新</a></li>
+                            <li ><a href="<?php echo U('EnterpriseCulture/index#value');?>" >创&nbsp;&nbsp;&nbsp;&nbsp;新</a></li>
 
-                            <li ><a href="corporateCulture.html#value" >价&nbsp;&nbsp;&nbsp;&nbsp;值</a></li>
+                            <li ><a href="<?php echo U('EnterpriseCulture/index#value');?>" >价&nbsp;&nbsp;&nbsp;&nbsp;值</a></li>
                         </ul>
                     </div>
                     <div class="section-two">
                         <ul>
                             <center><p class="title-font">公司信息</p></center>
-                            <li><a href="companyInfo.html#companyIntro" >海德简介</a></li>
-                            <li><a href="companyInfo.html#president" >总裁致辞</a></li>
-                            <li><a href="companyInfo.html#devCourse" >发展历程</a></li>
-                            <li><a href="companyInfo.html#organization">组织结构</a></li>
-                            <li><a href="companyInfo.html#coreGroup" >核心团队</a></li>
+                            <li><a href="<?php echo U('company/index#companyIntro');?>" >海德简介</a></li>
+                            <li><a href="<?php echo U('company/index#president');?>" >总裁致辞</a></li>
+                            <li><a href="<?php echo U('company/index#devCourse');?>" >发展历程</a></li>
+                            <li><a href="<?php echo U('company/index#organization');?>">组织结构</a></li>
+                            <li><a href="<?php echo U('company/index#coreGroup');?>" >核心团队</a></li>
                         </ul>
                     </div>
                     <div class="section-two">
                         <ul>
                             <center><p class="title-font">业务体系</p></center>
-                            <li><a href="businessSystem.html#kaiba" >开呗</a></li>
-                            <li><a href="businessSystem.html#carNews" >98车讯</a></li>
-                            <li><a href="businessSystem.html#shenzhenBranch" >深圳分公司</a></li>
-                            <li><a href="businessSystem.html#guangzhouBranch" >广州分公司</a></li>
+                            <li><a href="<?php echo U('product/index#kaiba');?>" >开呗</a></li>
+                            <li><a href="<?php echo U('product/index#carNews');?>" >98车讯</a></li>
+                            <li><a href="<?php echo U('product/index#shenzhenBranch');?>" >深圳分公司</a></li>
+                            <li><a href="<?php echo U('product/index#guangzhouBranch');?>" >广州分公司</a></li>
                         </ul>
                     </div>
                     <div class="section-two">
                         <ul>
                             <center><p class="title-font">企业文化</p></center>
-                            <li><a href="corporateCulture.html#corporateVision" >企业愿景</a></li>
-                            <li><a href="corporateCulture.html#mission" >企业使命</a></li>
-                            <li><a href="corporateCulture.html#purpose" >企业宗旨</a></li>
-                            <li><a href="corporateCulture.html#value" targetdiv="div5">核心价值观</a></li>
-                            <li><a href="corporateCulture.html#culture" targetdiv="div1">文化品格</a></li>
-                            <li><a href="corporateCulture.html#product" targetdiv="div2">产品理念</a></li>
-                            <li><a href="corporateCulture.html#talent" targetdiv="div4">人才策略</a></li>
-                            <li><a href="corporateCulture.html#hadlink" targetdiv="div5">海德印象</a></li>
+                            <li><a href="<?php echo U('EnterpriseCulture/index#corporateVision');?>" >企业愿景</a></li>
+                            <li><a href="<?php echo U('EnterpriseCulture/index#mission');?>" >企业使命</a></li>
+                            <li><a href="<?php echo U('EnterpriseCulture/index#purpose');?>" >企业宗旨</a></li>
+                            <li><a href="<?php echo U('EnterpriseCulture/index#value');?>" targetdiv="div5">核心价值观</a></li>
+                            <li><a href="<?php echo U('EnterpriseCulture/index#culture');?>" targetdiv="div1">文化品格</a></li>
+                            <li><a href="<?php echo U('EnterpriseCulture/index#product');?>" targetdiv="div2">产品理念</a></li>
+                            <li><a href="<?php echo U('EnterpriseCulture/index#talent');?>" targetdiv="div4">人才策略</a></li>
+                            <li><a href="<?php echo U('EnterpriseCulture/index#hadlink');?>" targetdiv="div5">海德印象</a></li>
                         </ul>
                     </div>
                     <div class="section-two">
                         <ul>
                             <center><p class="title-font">投资者关系</p></center>
-                            <li><a href="investor.html#corporateNotice" >公司公告</a></li>
-                            <li><a href="investor.html#companyRunReport">经营报告</a></li>
-                            <li><a href="investor.html#companyManage">公司治理</a></li>
-                            <li><a href="investor.html#companyother">其他动态</a></li>
+                            <li><a href="<?php echo U('investor/index#corporateNotice');?>" >公司公告</a></li>
+                            <li><a href="<?php echo U('investor/index#companyRunReport');?>">经营报告</a></li>
+                            <li><a href="<?php echo U('investor/index#companyManage');?>">公司治理</a></li>
+                            <li><a href="<?php echo U('investor/index#companyother');?>">其他动态</a></li>
                         </ul>
                     </div>
                     <div class="section-two">
                         <ul>
                             <center><p class="title-font">合作洽谈</p></center>
-                            <li><a href="cooperate.html#headquarters">联系我们</a></li>
-                            <li><a href="cooperate.html#talentJoin">招贤纳士</a></li>
+                            <li><a href="<?php echo U('BusinessCooperation/index#headquarters');?>">联系我们</a></li>
+                            <li><a href="<?php echo U('BusinessCooperation/index#talentJoin');?>">招贤纳士</a></li>
                         </ul>
                     </div>
                 </div>

@@ -4,18 +4,25 @@
     <load href="__CSS__/App/home/product.css" />
 </block>
 <block name="content">
-    <div  class="had-container" >
-        <div class="business-nav">
-            <ul>
-                <li id="js-comIntro" ><a data-id="1" href="#kaiba" > 开呗</a></li>
-                <li id="js-president"><a data-id="2" href="#carNews" >98车讯</a></li>
-                <li id="js-devCourse"><a data-id="3" href="#shenzhenBranch" >深圳分公司</a></li>
-                <li id="js-organization"><a data-id="4" href="#guangzhouBranch" >广州分公司</a></li>
-            </ul>
-        </div>
+    <div id="product" class="company-nav" >
+        <div id="subKaibei" class="nav-div active-font"><a  href="{:U('index#kaiba')}" class="">开呗</a></div>
+        <div id="subCarNews" class="nav-div"><a  href="{:U('index#carNews')}">98车讯</a></div>
+        <div id="subShenzhen" class="nav-div"><a  href="{:U('index#shenzhenBranch')}">深圳分公司</a></div>
+        <div id="subGuangzhou" class="nav-div"><a  href="{:U('index#guangzhouBranch')}">广州分公司</a></div>
+    </div>
+    <div  class="had-container bg-white" >
+        <!--<div class="business-nav">-->
+            <!--<ul>-->
+                <!--<li id="js-comIntro" ><a data-id="1" href="#kaiba" > 开呗</a></li>-->
+                <!--<li id="js-president"><a data-id="2" href="#carNews" >98车讯</a></li>-->
+                <!--<li id="js-devCourse"><a data-id="3" href="#shenzhenBranch" >深圳分公司</a></li>-->
+                <!--<li id="js-organization"><a data-id="4" href="#guangzhouBranch" >广州分公司</a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+        <div class="pic-center"><img src="__IMG__/yewu.png"></div>
         <!--开呗业务介绍-->
-        <div id="kaiba" class="section-common div-center" style="min-height: 730px;">
-            <div><img src="__IMG__/yewu.png"></div>
+        <div id="kaiba" class="section-common div-center pd-20" style="min-height: 730px;">
+
             <h3 style="color: #ffa54a;padding-top: 25px;">开呗</h3>
             <p style="padding-top: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;  开呗是由我公司研发并推出，一款专业面向广大车主的值得信赖的车生活深度应用工具，主要构建车主和车服务商之间的信息服务平台，主要的应用端口有PC端、APP端、移动端、车机端。</p>
             <p class="p-low">&nbsp;&nbsp;&nbsp;&nbsp;开呗——中国最具活力的车生活服务平台——围绕车主进行全面资源整合，深度解决车主的车生活痛点，开启车主快捷方便、轻松愉悦的车生活一键达成模式，具备“便捷、透明、质优、价廉”的功能，拥有体验超值化、服务多样化、交易方便化、应用广泛化四大特点，目前拥有50万车主用户，依据车生活需求整合了四方面庞大的资源形成了资源矩阵：四方面庞大的资源形成了资源矩阵：
@@ -61,18 +68,18 @@
             </div>
         </div>
         <!--98车讯-->
-        <div id="carNews" class="section-common div-center" style="min-height: 300px;">
+        <div id="carNews" class="section-common div-center pd-20" style="min-height: 300px;">
             <h3 style="color: #ffa54a;">98车讯</h3>
             正在建设，敬请期待！
 
         </div>
         <!--深圳分公司-->
-        <div id="shenzhenBranch" class="section-common div-center" style="min-height: 300px;">
+        <div id="shenzhenBranch" class="section-common div-center pd-20" style="min-height: 300px;">
             <h3 style="color: #ffa54a;">深圳分公司</h3>
             筹备建设中，敬请期待！
         </div>
         <!--广州分公司-->
-        <div id="guangzhouBranch" class="section-common div-center" style="min-height: 300px;">
+        <div id="guangzhouBranch" class="section-common div-center pd-20" style="min-height: 300px;">
             <h3 style="color: #ffa54a;">广州分公司</h3>
             筹备建设中，敬请期待！
         </div>
