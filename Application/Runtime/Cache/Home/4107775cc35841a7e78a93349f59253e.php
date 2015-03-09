@@ -148,21 +148,21 @@
         <div id="subOrganization" class="nav-div"><a  href="<?php echo U('index#organization');?>">组织结构</a></div>
         <div id="subGroup" class="nav-div"><a  href="<?php echo U('index#coreGroup');?>">核心团队</a></div>
     </div>
-    <div class="had-container bg-white">
+    <div class="had-container bg-white" >
         <!--公司介绍-->
-        <div class="pic-center" style="width: 1000px;z-index: 0" ><img src="/Public/Images/large.png" alt=""  style="z-index: 0" ></div>
+        <div class="pic-center" style="width: 1000px;z-index: 0" ><img src="/Public/Images/large.png" alt="公司信息导航图"  style="z-index: 0" ></div>
         <div id="companyIntro" class="section-intro div-center pd-20" style="height: 340px;">
 
             <h3 class="p-h3">公司介绍</h3>
-            <p class="p-low">海德在线成立于2014年3月，是目前中国少数以构建汽车后市场生态产业链为己任的互联网公司，旗下“<font color="red"><a href="http://www.91czs.com" style="color: #ffa54a">开呗</a></font>”品牌、也是中国目前最具活力的车生活服务平台之一，总部位于年轻美丽而又充满激情与活力的深圳。</p>
+            <p >海德在线成立于2014年3月，是目前中国少数以构建汽车后市场生态产业链为己任的互联网公司，旗下“<font color="red"><a href="http://www.91czs.com" style="color: #ffa54a">开呗</a></font>”品牌、也是中国目前最具活力的车生活服务平台之一，总部位于年轻美丽而又充满激情与活力的深圳。</p>
 
-            <p class="p-low">
+            <p >
                 “<font color="#ff7f50">让移动科技改变汽车本地生活</font> ”------是海德在线的使命，目前海德在线把为用户提供“一站式的线上线下服务”作为我们唯一的战略目标，为其提供更加<font color="#ff7f50">便捷、透明、质优、价廉</font>的超值体验。海德在线同时打造中国汽车服务产业最大、最全、最专业的网络社区，满足车主、服务商以及其他伙伴在线专家解答、沟通、资讯、商务、展示、分享、等方面的需求。
             </p>
-            <p class="p-low">
+            <p >
                 海德在线以“<font color="#ff7f50">海纳百川、德行天下</font>”为企业宗旨，树立了“激情、 创新、价值”的核心价值观， 塑造了“分享、包容、真诚”的文化品格。 从而构建起海德在线独特的企业文化和战略精髓。
             </p>
-            <p class="p-low">
+            <p>
                 展望未来，我们希望把海德在线做成一家受人尊敬的企业。我们真诚的希望能与所有伙伴分享，能与所有伙伴携手，帮助中国亿万车主获得更加超值的价值体验，帮助更多的汽车服务提供商以及配套产品提供商，获得更加良性与公平的市场竞争环境。
             </p>
 

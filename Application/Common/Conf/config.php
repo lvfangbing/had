@@ -8,8 +8,8 @@ return array(
         'admin.had.com'  => 'Admin',  // admin.domain1.com域名指向Admin模块
         'www.had.com'  => 'Home',
     ),
-//    'URL_ROUTER_ON'   => true,
-    'URL_MODEL' => '2',
+    'URL_ROUTER_ON'   => true,
+    'URL_MODEL' => '3',
        /* 数据库设置 */
     'DB_TYPE'               =>  'mysql',     // 数据库类型
     'DB_HOST'               =>  '127.0.0.1', // 服务器地址

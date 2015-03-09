@@ -1,4 +1,8 @@
 
+@font-face {
+    font-family: SIMYOU;
+    src:url(../../Font/SIMYOU.TTF);
+}
 .header-border-bottom {
     border-bottom: 1px  #808080;
     background: #eeeeee;
@@ -41,6 +45,7 @@
 }
 
 .nav-bar a {
+    font-family: SIMYOU;
     display: block;
     /*width: 105px;*/
     /*height: 40px;*/

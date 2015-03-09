@@ -16,7 +16,6 @@ define(function(require,exports,module){
                 slideUp.fadeOut(300);
             }
             var a = $('.business-nav').find('a');
-
             if(top >0 && top < 700){
                 basejs.setValue($('#subKaibei'));
             }

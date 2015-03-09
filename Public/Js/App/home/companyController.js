@@ -23,7 +23,7 @@ define(function(require,exports,module){
         var top = $(document).scrollTop();
         var Width = document.body.clientWidth;
         var leftWidth = (Width - 1000)/2;
-        var left = leftWidth + 997;
+        var left = leftWidth + 1000;
         var top = 200;
         selector.css({'left':left,'top':top}).show().animate({
 

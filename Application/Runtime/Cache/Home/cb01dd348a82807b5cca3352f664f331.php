@@ -25,10 +25,10 @@
     <div class="nav-bar" style="height: 40px;width: 100%;line-height: 40px;margin-top:10px;">
         <ul>
             <li >
-                <a href="index.html" id="firstPage">海德首页</a>
+                <a href="<?php echo U('Index/index');?>" id="firstPage">海德首页</a>
             </li>
             <li>
-                <a href="companyInfo.html" id="copanyInfo">公司信息</a>
+                <a href="<?php echo U('company/index');?>" id="copanyInfo">公司信息</a>
                 <ul class="company-tab" style="height:220px;margin: 0;">
                     <li><a href="<?php echo U('company/index#companyIntro');?>">公司介绍</a></li>
                     <li><a href="<?php echo U('company/index#president');?>">总裁寄语</a></li>
@@ -38,7 +38,7 @@
                 </ul>
             </li>
             <li class="bottom-active" style="width: 120px;">
-                <a href="news.html" id="news">新闻中心</a>
+                <a href="<?php echo U('news/index');?>" id="news">新闻中心</a>
                 <ul class="company-tab" style="height: 140px;padding-top: 10px;" >
                     <li><a href="<?php echo U('news/index#companyNews');?>">公司新闻</a></li>
                     <li><a href="<?php echo U('news/index#industryInformation');?>">行业新闻</a></li>
@@ -46,7 +46,7 @@
                 </ul>
             </li>
             <li style="width: 120px;">
-                <a href="corporateCulture.html">企业文化</a>
+                <a href="<?php echo U('culture/index');?>">企业文化</a>
                 <ul class="company-tab" style="height: 380px;padding-top: 10px;">
                     <li><a href="<?php echo U('Culture/index#corporateVision');?>" > 企业愿景</a></li>
                     <li><a href="<?php echo U('Culture/index#mission');?>" >使命</a></li>
@@ -60,7 +60,7 @@
                 </ul>
             </li>
             <li style="width: 120px;">
-                <a href="businessSystem.html">业务体系</a>
+                <a href="<?php echo U('product/index');?>">业务体系</a>
                 <ul class="company-tab" style="height: 180px;padding-top: 10px;">
                     <li><a href="<?php echo U('product/index#kaiba');?>" >开呗</a></li>
                     <li><a href="<?php echo U('product/index#carNews');?>" >98车讯</a></li>
@@ -70,7 +70,7 @@
             </li>
 
             <li style="width: 120px;">
-                <a href="investor.html">投资者关系</a>
+                <a href="<?php echo U('investor/index');?>">投资者关系</a>
                 <ul class="company-tab" style="height: 140px;padding-top: 10px;" >
                     <li ><a href="<?php echo U('investor/index#corporateNotice');?>" > 投资章程</a></li>
                     <li  ><a href="<?php echo U('investor/index#companyRunReport');?>" >投资者关系</a></li>
@@ -79,7 +79,7 @@
                 </ul>
             </li>
             <li style="width: 130px;">
-                <a href="cooperate.html" id="cooperation">合作洽谈</a>
+                <a href="<?php echo U('Cooperation/index');?>" id="cooperation">合作洽谈</a>
                 <ul class="company-tab" style="height: 105px;width: 130px;padding-top: 10px;">
                     <li ><a href="<?php echo U('Cooperation/index#headquarters');?>" > 投资章程</a></li>
                     <li  ><a href="<?php echo U('Cooperation/index#talentJoin');?>" >投资者关系</a></li>

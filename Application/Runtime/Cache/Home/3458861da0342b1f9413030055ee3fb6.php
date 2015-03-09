@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>海德在线</title>
+
     <link rel="stylesheet" type="text/css" href="/Public/Css/App/home/header.css" />
     <link rel="stylesheet" type="text/css" href="/Public/Css/Base/bootstrap/3.3.0/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/Public/Css/App/home/public.css">
@@ -30,12 +31,108 @@
         <div class="hadlink-logo"><a href="/"><img src="/Public/Images/hadlinkLOGO.png" alt="海德在在线" width="230" height="100"></a> </div>
         <ul class="nav-bar">
             <li class="bottom-active"><a href="/" id="firstPage">首页</a> </li>
-            <li ><a href="<?php echo U('company/index');?>" id="companyInfo">公司信息</a></li>
-            <li><a href="<?php echo U('news/index');?>" id="news">新闻中心</a></li>
-            <li><a href="<?php echo U('EnterpriseCulture/index');?>">企业文化</a></li>
-            <li ><a href="<?php echo U('product/index');?>">业务体系</a></li>
-            <li ><a href="<?php echo U('investor/index');?>">投资者关系</a></li>
-            <li ><a href="<?php echo U('BusinessCooperation/index');?>" id="cooperation">合作洽谈</a></li>
+            <li ><a href="<?php echo U('company/index');?>" id="companyInfo">公司信息</a>
+                <!--<div class="sub-div5">-->
+                    <!--<ul>-->
+                        <!--<li><a href=""></a></li>-->
+                        <!--<li><a href=""></a></li>-->
+                        <!--<li><a href=""></a></li>-->
+                        <!--<li><a href=""></a></li>-->
+                        <!--<li><a href=""></a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+                <div class="panInfo_box" style=" height: 200px;">
+                    <ul>
+                        <li><a href="<?php echo U('company/index#companyIntro');?>">公司介绍</a></li>
+                        <li><a href="<?php echo U('company/index#president');?>">总裁寄语</a></li>
+                        <li><a href="<?php echo U('company/index#devCourse');?>">发展历程</a></li>
+                        <li><a href="<?php echo U('company/index#organization');?>">组织结构</a></li>
+                        <li><a href="<?php echo U('company/index#coreGroup');?>">核心团队</a></li>
+                    </ul>
+                    <div class="imcss">
+                        <span class="triangle_bdr"></span>
+                        <span class="triangle"></span>
+                    </div>
+                </div>
+            </li>
+
+            <li><a href="<?php echo U('news/index');?>" id="news">新闻中心</a>
+                <div class="panInfo_box" style="height: 120px;">
+                    <ul>
+                        <li><a href="<?php echo U('news/index#companyNews');?>">公司新闻</a></li>
+                        <li><a href="<?php echo U('news/index#industryInformation');?>">行业新闻</a></li>
+                        <li><a href="<?php echo U('news/index#companyAnnounce');?>">企业发布</a></li>
+                        <!--<li><a href="<?php echo U('company/index#organization');?>">组织结构</a></li>-->
+                        <!--<li><a href="<?php echo U('company/index#coreGroup');?>">核心团队</a></li>-->
+                    </ul>
+                    <div class="imcss">
+                        <span class="triangle_bdr"></span>
+                        <span class="triangle"></span>
+                    </div>
+                </div>
+            </li>
+            <li><a href="<?php echo U('Culture/index');?>">企业文化</a>
+                <div class="panInfo_box" style="height: 400px;">
+                    <ul>
+                        <li><a href="<?php echo U('Culture/index#corporateVision');?>" > 企业愿景</a></li>
+                        <li><a href="<?php echo U('Culture/index#mission');?>" >使命</a></li>
+                        <li><a href="<?php echo U('Culture/index#purpose');?>" >宗旨</a></li>
+                        <li><a href="<?php echo U('Culture/index#value');?>" >核心价值观</a></li>
+                        <li><a href="<?php echo U('Culture/index#culture');?>" >文化品格</a></li>
+                        <li><a href="<?php echo U('Culture/index#product');?>" >产品理念</a></li>
+                        <li><a href="<?php echo U('Culture/index#manage');?>" >管理理念</a></li>
+                        <li><a href="<?php echo U('Culture/index#talent');?>" >人才战略</a></li>
+                        <li><a href="<?php echo U('Culture/index#hadlink');?>" >海德印象</a></li>
+                    </ul>
+                    <div class="imcss">
+                        <span class="triangle_bdr"></span>
+                        <span class="triangle"></span>
+                    </div>
+                </div>
+            </li>
+            <li ><a href="<?php echo U('product/index');?>">业务体系</a>
+                <div class="panInfo_box" style="height: 180px;">
+                    <ul>
+                        <li><a href="<?php echo U('product/index#kaiba');?>" >开呗</a></li>
+                        <li><a href="<?php echo U('product/index#carNews');?>" >98车讯</a></li>
+                        <li><a href="<?php echo U('product/index#shenzhenBranch');?>" >深圳分公司</a></li>
+                        <li><a href="<?php echo U('product/index#guangzhouBranch');?>" >广州分公司</a></li>
+                    </ul>
+                    <div class="imcss">
+                        <span class="triangle_bdr"></span>
+                        <span class="triangle"></span>
+                    </div>
+                </div>
+            </li>
+            <li >
+                <a href="<?php echo U('investor/index');?>">投资者关系</a>
+                <div class="panInfo_box" style="height: 120px;">
+                    <ul>
+                        <li ><a href="<?php echo U('investor/index#corporateNotice');?>" > 投资章程</a></li>
+                        <li  ><a href="<?php echo U('investor/index#companyRunReport');?>" >投资者关系</a></li>
+                        <li  ><a href="<?php echo U('investor/index#companyManage');?>" >公司定期专栏</a></li>
+                    </ul>
+                    <div class="imcss">
+                        <span class="triangle_bdr"></span>
+                        <span class="triangle"></span>
+                    </div>
+                </div>
+
+            </li>
+            <li >
+                <a href="<?php echo U('Cooperation/index');?>" id="cooperation">合作洽谈</a>
+                <div class="panInfo_box" style="height: 70px;">
+                    <ul>
+                        <li ><a href="<?php echo U('Cooperation/index#headquarters');?>" > 投资章程</a></li>
+                        <li  ><a href="<?php echo U('Cooperation/index#talentJoin');?>" >投资者关系</a></li>
+
+                    </ul>
+                    <div class="imcss">
+                        <span class="triangle_bdr"></span>
+                        <span class="triangle"></span>
+                    </div>
+                </div>
+            </li>
         </ul>
     </div>
 </div>
@@ -139,11 +236,11 @@
                     <div class="section-one">
                         <ul >
                             <center><p class="title-font">企业核心价值</p></center>
-                            <li style="margin-top: 0;"><a href="<?php echo U('EnterpriseCulture/index#value');?>" >激&nbsp;&nbsp;&nbsp;&nbsp;情</a></li>
+                            <li style="margin-top: 0;"><a href="<?php echo U('Culture/index#value');?>" >激&nbsp;&nbsp;&nbsp;&nbsp;情</a></li>
 
-                            <li ><a href="<?php echo U('EnterpriseCulture/index#value');?>" >创&nbsp;&nbsp;&nbsp;&nbsp;新</a></li>
+                            <li ><a href="<?php echo U('Culture/index#value');?>" >创&nbsp;&nbsp;&nbsp;&nbsp;新</a></li>
 
-                            <li ><a href="<?php echo U('EnterpriseCulture/index#value');?>" >价&nbsp;&nbsp;&nbsp;&nbsp;值</a></li>
+                            <li ><a href="<?php echo U('Culture/index#value');?>" >价&nbsp;&nbsp;&nbsp;&nbsp;值</a></li>
                         </ul>
                     </div>
                     <div class="section-two">
@@ -168,14 +265,14 @@
                     <div class="section-two">
                         <ul>
                             <center><p class="title-font">企业文化</p></center>
-                            <li><a href="<?php echo U('EnterpriseCulture/index#corporateVision');?>" >企业愿景</a></li>
-                            <li><a href="<?php echo U('EnterpriseCulture/index#mission');?>" >企业使命</a></li>
-                            <li><a href="<?php echo U('EnterpriseCulture/index#purpose');?>" >企业宗旨</a></li>
-                            <li><a href="<?php echo U('EnterpriseCulture/index#value');?>" targetdiv="div5">核心价值观</a></li>
-                            <li><a href="<?php echo U('EnterpriseCulture/index#culture');?>" targetdiv="div1">文化品格</a></li>
-                            <li><a href="<?php echo U('EnterpriseCulture/index#product');?>" targetdiv="div2">产品理念</a></li>
-                            <li><a href="<?php echo U('EnterpriseCulture/index#talent');?>" targetdiv="div4">人才策略</a></li>
-                            <li><a href="<?php echo U('EnterpriseCulture/index#hadlink');?>" targetdiv="div5">海德印象</a></li>
+                            <li><a href="<?php echo U('Culture/index#corporateVision');?>" >企业愿景</a></li>
+                            <li><a href="<?php echo U('Culture/index#mission');?>" >企业使命</a></li>
+                            <li><a href="<?php echo U('Culture/index#purpose');?>" >企业宗旨</a></li>
+                            <li><a href="<?php echo U('Culture/index#value');?>" targetdiv="div5">核心价值观</a></li>
+                            <li><a href="<?php echo U('Culture/index#culture');?>" targetdiv="div1">文化品格</a></li>
+                            <li><a href="<?php echo U('Culture/index#product');?>" targetdiv="div2">产品理念</a></li>
+                            <li><a href="<?php echo U('Culture/index#talent');?>" targetdiv="div4">人才策略</a></li>
+                            <li><a href="<?php echo U('Culture/index#hadlink');?>" targetdiv="div5">海德印象</a></li>
                         </ul>
                     </div>
                     <div class="section-two">
@@ -190,8 +287,8 @@
                     <div class="section-two">
                         <ul>
                             <center><p class="title-font">合作洽谈</p></center>
-                            <li><a href="<?php echo U('BusinessCooperation/index#headquarters');?>">联系我们</a></li>
-                            <li><a href="<?php echo U('BusinessCooperation/index#talentJoin');?>">招贤纳士</a></li>
+                            <li><a href="<?php echo U('Cooperation/index#headquarters');?>">联系我们</a></li>
+                            <li><a href="<?php echo U('Cooperation/index#talentJoin');?>">招贤纳士</a></li>
                         </ul>
                     </div>
                 </div>

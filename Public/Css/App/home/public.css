@@ -1,14 +1,23 @@
 body {
     background: #f7f7f7;
 }
+@font-face {
+    font-family: SIMYOU;
+    src:url(../../Font/SIMYOU.TTF);
+}
 .global-fluid {
     width: 100%;
+}
+@font-face {
+    font-family: SIMYOU;
+    src:url(../../Font/SIMYOU.TTF);
 }
 .had-container {
     width: 1000px;
     margin-right: auto;
     margin-left: auto;
     /*padding-top:1px;*/
+    z-index: 98;
 }
 .div-center {
     margin-left: auto;
@@ -20,6 +29,9 @@ body {
     overflow: hidden;
 }
 
+.div-center p {
+    font-family:  "宋体" ;
+}
 .p-h3 {
     color: #ffa54a;
     margin-top: 40px;
@@ -40,6 +52,7 @@ body {
 }
 .nav-div a {
     color: #999999;
+    font-family: SIMYOU;
 }
 .nav-div a:hover {
     text-decoration: none;
@@ -57,6 +70,7 @@ body {
 }
 .bg-white {
     background: #ffffff;
+    box-shadow: 0 0 5px 0 #DDD;
 }
 .pd-20 {
     padding: 0 20px;

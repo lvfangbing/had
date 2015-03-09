@@ -3,30 +3,30 @@
  */
 define(function(require,exports,module) {
     var $ = require('jquery');
+    var basejs = require('baseController.js');
     function index(){
         var main = $('#main-content');
         var windowInfo = $('#windowInfo');
-        var basejs = require('baseController.js');
         function jumpAnimate(){
-            $("body").css("overflow", "hidden")
+            $("body").css("overflow", "hidden");
             windowInfo.css('top',-750).show();
             windowInfo.animate({'top':'-750px'},"fast");
             windowInfo.animate({'top':'190px'},"fast");
             windowInfo.animate({'top':'10px'},"fast");
-            windowInfo.animate({'top':'180px'},"fast");
-            windowInfo.animate({'top':'20px'},"fast");
+            //windowInfo.animate({'top':'180px'},"fast");
+            //windowInfo.animate({'top':'20px'},"fast");
             windowInfo.animate({'top':'160px'},"fast");
             windowInfo.animate({'top':'40px'},"fast");
-            windowInfo.animate({'top':'140px'},"fast");
-            windowInfo.animate({'top':'60px'},"fast");
+            //windowInfo.animate({'top':'140px'},"fast");
+            //windowInfo.animate({'top':'60px'},"fast");
             windowInfo.animate({'top':'120px'},"fast");
             windowInfo.animate({'top':'80px'},"fast");
             windowInfo.animate({'top':'100px'},"fast");
 
         }
         var Width = document.body.clientWidth;
-        var leftWidth = (Width - 1000)/2;
-        var left = leftWidth + 1000;
+        var leftWidth = (Width - 1230)/2;
+        var left = leftWidth + 1230;
         $('#pullRing').css('left',left).fadeIn('linear');
         main.on('click','#pullRing',function(){
             var _self = $(this).find('img');
