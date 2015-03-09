@@ -20,12 +20,12 @@ define(function(require,exports,module){
         $(window).scroll(function(){
             var top = $(document).scrollTop();
             console.log(top);
-            if(top >= 150){
-                $('.news-nav').css('top','0');
-                slideUp.fadeIn(300);
+            if(top > 10){
+                slideUp.find('img').attr('src','/Public/Images/backtopyes.png').data('id',1);
+
+                //slideUp
             }else{
-                $('.news-nav').css('top',102);
-                slideUp.fadeOut(300);
+                slideUp.find('img').attr({'src':'/Public/Images/backtopno.png'},'fast').data('id',0);
             }
             if(top > -1){
                 setPosition($('#news-nav'));

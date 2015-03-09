@@ -6,12 +6,18 @@ define(function(require,exports,module){
     //require('bootstrap');
     function backTop(){
         var slideUp = $('#slideUp');
-        slideUp.fadeOut(300);
+        var Width = document.body.clientWidth;
+        var leftWidth = (Width - 1000)/2;
+        var left = leftWidth + 1000;
+        slideUp.css('left',left).fadeIn('linear');
         slideUp.on('click',function(){//返回顶部
-            $('html,body').animate({
-                scrollTop: '0px'
-            }, 300);
-            return false;
+            var id = $(this).find('img').data('id');
+            if( id == 1){
+                $('html,body').animate({
+                    scrollTop: '0px'
+                }, 300);
+                return false;
+            }
         });
     };
     function setValue(Element){
@@ -32,7 +38,7 @@ define(function(require,exports,module){
     }
     var main = {
         base:function(){
-            backTop();
+            //backTop();
             nav_hover();
         },
         setValue:setValue,

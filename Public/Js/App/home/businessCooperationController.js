@@ -12,10 +12,13 @@ define(function(require,exports,module){
     function businessCooperationController(){
         $(window).scroll(function(){
             var top = $(document).scrollTop();
-            if(top >=10){
-                slideUp.fadeIn(300);
+
+            if(top > 10){
+                slideUp.find('img').attr('src','/Public/Images/backtopyes.png').data('id',1);
+
+                //slideUp
             }else{
-                slideUp.fadeOut(300);
+                slideUp.find('img').attr({'src':'/Public/Images/backtopno.png'},'fast').data('id',0);
             }
 
             if(top >200  && top < 1000){

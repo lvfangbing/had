@@ -22,20 +22,20 @@ define(function(require,exports,module) {
             windowInfo.animate({'top':'120px'},"fast");
             windowInfo.animate({'top':'80px'},"fast");
             windowInfo.animate({'top':'100px'},"fast");
-
         }
         var Width = document.body.clientWidth;
         var leftWidth = (Width - 1230)/2;
         var left = leftWidth + 1230;
         $('#pullRing').css('left',left).fadeIn('linear');
         main.on('click','#pullRing',function(){
-            var _self = $(this).find('img');
-            _self.animate({height:'150px',opacity:'0.8'},"100");
-            _self.animate({height:'133px',opacity:'1'},"linear");
+            var _self = $(this);
+            //_self.animate({height:'150px',opacity:'0.8'},"100");
+            _self.animate({top:'100px'},"300");
             //windowInfo.fadeToggle("slow","linear");
             jumpAnimate();
             windowInfo.delay(800).fadeOut('300',function(){
                 $("body").css("overflow", "scroll");
+                _self.animate({top:'75'},"300");
             });
         });
         var height  =window.pageYOffset;
@@ -64,7 +64,7 @@ define(function(require,exports,module) {
                 //windowInfo.css('top',0);
                 $('#pullRing').css('top',0);
             }else{
-                $('#pullRing').css('top',100);
+                $('#pullRing').css('top',75);
             }
         })
     }

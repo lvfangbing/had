@@ -56,22 +56,20 @@ define(function(require,exports,module){
     function scroll(){
         $(document).scroll(function(){
             var top = $(document).scrollTop();
-            if(top >= 150){
-                slideUp.fadeIn(300);
+            if(top > 10){
+                slideUp.find('img').attr('src','/Public/Images/backtopyes.png').data('id',1);
             }else{
-                slideUp.fadeOut(300);
+                slideUp.find('img').attr({'src':'/Public/Images/backtopno.png'},'fast').data('id',0);
             }
             //console.log(top);
             var a = $('.company-nav').find('a');
             if(top >0 && top < 650 ){
                 var sub = $('#subIntro');
                 basejs.setValue(sub);
-
             }
             if(top >=650 && top < 1680){
                 var sub = $('#subPresident');
                 basejs.setValue(sub);
-
             }
             if(top >=1680 && top < 3080){
                 var sub = $('#subDev');

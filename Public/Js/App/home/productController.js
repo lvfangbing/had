@@ -10,11 +10,14 @@ define(function(require,exports,module){
     function product(){
         $(window).scroll(function(){
             var top = $(document).scrollTop()
-            if(top >= 100){
-                slideUp.fadeIn(100);
+            if(top > 10){
+                slideUp.find('img').attr('src','/Public/Images/backtopyes.png').data('id',1);
+
+                //slideUp
             }else{
-                slideUp.fadeOut(300);
+                slideUp.find('img').attr({'src':'/Public/Images/backtopno.png'},'fast').data('id',0);
             }
+            console.log(top);
             var a = $('.business-nav').find('a');
             if(top >0 && top < 700){
                 basejs.setValue($('#subKaibei'));

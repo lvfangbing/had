@@ -103,7 +103,7 @@ body {
     -webkit-animation: 'viewActive' 0.2s ease-out;
     -ms-animation:     'viewActive' 0.2s ease-out;
     -moz-animation:    'viewActive' 0.2s ease-out;
-    z-index: 99;
+    z-index: 8;
 
 }
 @-webkit-keyframes viewActive{
@@ -144,13 +144,13 @@ body {
     position: fixed;
     top: 101px;
     /*background: #808080;*/
-    z-index: 999;
+    z-index: 9;
     display: none;
 }
 .pull-ring {
     width: 63px;
     height: 133px;
-    z-index: 1000;
+    z-index: 11;
     position: fixed;
     left: 1400px;
     top:100px;

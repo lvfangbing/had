@@ -27,7 +27,7 @@
 
 
     
-<div  class="global-fluid header-border-bottom" style="z-index: 999;">
+<div  class="global-fluid header-border-bottom" style="z-index: 999; position: relative;">
     <div class="nav-container">
         <div class="hadlink-logo"><a href="/"><img src="/Public/Images/hadlinkLOGO.png" alt="海德在在线" width="230" height="100"></a> </div>
         <ul class="nav-bar">
@@ -144,14 +144,14 @@
     <div id="main-content" class="main-content">
         <div id="pullRing" class="pull-ring"><img src="/Public/Images/ring.png"></div>
         <div id="windowInfo" class="alert-window" >
-        <a href="http://www.ikaibei.com" target="_blank"> <img src="/Public/Images/index01.png" alt="" width="100%" height="750" ></a>
+        <a href="http://www.ikaibei.com" target="_blank"><img src="/Public/Images/index01.png" alt="" width="100%" height="750" ></a>
         </div>
         <div class="main-container" id="container">
             <!--<button id="close" type="button" class="btn btn-lg" style="position: absolute;margin-left: 1000px;margin-top: 1px;">-->
                 <!--<span class="glyphicon glyphicon-remove"></span>-->
             <!--</button>-->
             <!--<div id="windowInfo" class="alert-window">-->
-                <!--<a href="productRename.html"> <img src="/Public/Images/shouye.jpg" alt="" width="1000" height="749" ></a>-->
+                <!--<a href="productRename.html"><img src="/Public/Images/shouye.jpg" alt="" width="1000" height="749" ></a>-->
             <!--</div>-->
             <div class="about-us m-top-1 view"><a href="<?php echo U('Company/index#companyIntro');?>"><img src="/Public/Images/aboutus.png"></a></div>
             <div class="latest-news m-top-2 view"><a href="<?php echo U('News/index#companyNews');?>"><img src="/Public/Images/latest.png"></a></div>
@@ -246,7 +246,7 @@
         </div>
     </div>
 </div>
-<div id="slideUp" title="返回顶部" class="slideUp"><img src="/Public/Images/backtop.png"> </div>
+<div id="slideUp" title="返回顶部" class="slideUp"><img data-id="" src="/Public/Images/backtopno.png" alt="返回顶部"> </div>
 
     <script type="text/javascript">
         seajs.use('baseController.js',function(main){
