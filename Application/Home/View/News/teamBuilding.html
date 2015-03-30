@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>海德在线</title>
+    <link rel="stylesheet" href="__CSS__/App/home/newsdetail.css">
+    <link rel="stylesheet" href="__CSS__/App/home/newsmodule.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/Base/bootstrap/3.3.0/css/bootstrap.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="__JS__/Lib/seajs/2.3.0/sea.js"></script>
+    <script type="text/javascript" src="__JS__/Conf/baseConfig.js"></script>
+</head>
+<body>
+<div class="global-nav" style="height: 60px;line-height: 60px;">
+    <block name="header"><include file="News:header" /> </block>
+</div>
+<div class="had-container">
+    <div class="news-center">
+        <a href="{:U('Index/index')}"><img src="__IMG__/newscenter.png"></a>
+        <span>&nbsp;&nbsp;
+          <a class="bread-crumbs" href="{:U('News/index')}">  新闻中心</a>
+            <span class="bread-crumbs">></span>
+            <a class="bread-crumbs" href="{:U('News/index#companyNews')}">公司新闻</a>
+        </span>
+    </div>
+    <div id="companyNews" class="section-news" >
+        <p>
+        </p><h3 style="text-align:center">2015年南澳拓展活动</h3>
+        <h4 style="text-align:center; color:#666">发布日期：2014-9-30</h4>
+        <hr style="border: 1px solid #808080;">
+        <br>
+        <p class="p-low">
+            水可载舟，亦可覆舟。大海孕育了生命，同时也危机四伏。在茫茫无际的大海中航行的战舰该如何去面对这一切呢？水手被誉为是世界上最出色的团队之一，因为他们个个身怀绝技，依靠这个团队的密切合作，依靠团队的智慧和勇气，在与大海的斗争中博取自身的一席之地。随着竞争的日趋激烈，面临严峻考验的我们究竟需要些什么呢？</p>
+        <br>
+        <center>
+        <img src="__IMG__/tb01.jpg" width="600" height="400" >
+        
+        </center>
+        <p class="text-center" style="font-size:22px;">教练布置任务</p>
+        <center>
+        <img src="__IMG__/tb02.jpg" width="600" height="400" >       
+        </center>
+        <p class="text-center" style="font-size:22px;">分享拓展体会</p>
+        <center><img src="__IMG__/tb03.jpg" width="600" height="400" ></center>
+        <p class="text-center" style="font-size:22px;">分组讨论</p>
+        <center><img src="__IMG__/tb04.jpg" width="600" height="400" ></center>
+        <p class="text-center" style="font-size:22px;">单轨列车项目进行时</p>
+        <center><img src="__IMG__/tb07.jpg" width="600" height="400" ></center>    
+        <p class="text-center" style="font-size:22px;">争分夺秒项目进行时</p>
+        <center><img src="__IMG__/tb06.jpg" width="600" height="400" ></center>
+        <p class="text-center" style="font-size:22px;">教练就项目表现进行点评</p>
+       
+    </div>
+
+
+</div>
+<div class="global-fluid" style=" background: #666666;">
+    <block name="header"><include file="Public:footer" /> </block>
+</div>
+</body>
+</html>

@@ -7,15 +7,18 @@ define(function(require,exports,module){
     var slideUp = $('#slideUp');
     var basejs = require('baseController.js');
     function investorController(){
+        var top = $(document).scrollTop();
+        if(top > 0){
+            slideUp.find('img').attr('src','/Public/Images/backtopyes.png').data('id',1);
+        }
         $(window).scroll(function(){
-            var top = $(document).scrollTop()
-            if(top >= 100){
-                slideUp.fadeIn(300);
+            var top = $(document).scrollTop();
+            if(top > 10){
+                slideUp.find('img').attr('src','/Public/Images/backtopyes.png').data('id',1);
             }else{
-                slideUp.fadeOut(300);
+                slideUp.find('img').attr({'src':'/Public/Images/backtopno.png'},'fast').data('id',0);
             }
             console.log(top);
-
             if(top >0 && top < 600){
                 basejs.setValue($('#subKaibei'));
             }

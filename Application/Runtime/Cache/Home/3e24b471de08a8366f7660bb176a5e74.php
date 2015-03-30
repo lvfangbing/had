@@ -161,6 +161,7 @@
                 <!--<?php if(($count) > "10"): ?>-->
                     <!--<li><a href="">更多···</a></li>-->
                 <!--<?php endif; ?>-->
+                <li><a href="<?php echo U('news/news_20150320');?>" target="_blank">2015年南澳拓展活动</a> <span class="news-date">2015-03-06</span></li>
                 <li><a href="<?php echo U('news/news_20150306');?>" target="_blank">开呗上门保养 任性上线</a> <span class="news-date">2015-03-06</span></li>
                 <li><a href="<?php echo U('news/news_20150225');?>" target="_blank">海德在线2015年会</a> <span class="news-date">2015-02-07</span></li>
                 <li><a href="<?php echo U('news/news_20150207');?>" target="_blank">开呗2.0推出上门保养服务</a> <span class="news-date">2015-02-04</span></li>

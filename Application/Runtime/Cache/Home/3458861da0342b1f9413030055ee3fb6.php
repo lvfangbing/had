@@ -26,7 +26,7 @@
 
 
     
-<div  class="global-fluid header-border-bottom" style="z-index: 999;">
+<div  class="global-fluid header-border-bottom" style="z-index: 999; position: relative;">
     <div class="nav-container">
         <div class="hadlink-logo"><a href="/"><img src="/Public/Images/hadlinkLOGO.png" alt="海德在在线" width="230" height="100"></a> </div>
         <ul class="nav-bar">
@@ -306,7 +306,7 @@
         </div>
     </div>
 </div>
-<div id="slideUp" title="返回顶部" class="slideUp"><img src="/Public/Images/backtop.png"> </div>
+<div id="slideUp" title="返回顶部" class="slideUp"><img data-id="" src="/Public/Images/backtopno.png" alt="返回顶部"> </div>
 
     <script type="text/javascript">
         seajs.use('baseController.js',function(main){

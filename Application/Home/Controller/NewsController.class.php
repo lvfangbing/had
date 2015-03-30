@@ -40,6 +40,9 @@ class NewsController extends Controller {
     public function news(){
 
     }
+    public function news_20150320(){
+        $this->display('teamBuilding');
+    }
     public function news_20150306(){
         $this->display('prehomeService');
     }
@@ -100,4 +103,5 @@ class NewsController extends Controller {
     public function news_20141113(){
         $this->display('movein');
     }
+
 }

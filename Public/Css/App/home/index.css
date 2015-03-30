@@ -6,18 +6,16 @@ body {
     /*background: #808080;*/
 }
 .main-container {
-    width: 1000px;
+    width: 1160px;
     height: 750px;
     margin-left: auto;
     margin-right: auto;
 }
 
-
-
 /* 五张图片 */
 .about-us {
     width: auto;
-    height: 325px;
+    height: 390px;
     float: left;
     z-index: 999;
     position: relative;
@@ -35,31 +33,28 @@ body {
 }
 .latest-news {
     width: auto;
-    height: 340px;
+    height: 410px;
     float: left;
-    position: relative;
     position: relative;
     overflow: inherit;
 }
 .industry {
     width: auto;
-    height: 500px;
+    height: 550px;
     float: left;
-    position: relative;
     position: relative;
     overflow: inherit;
 }
 .product-info {
     width: auto;
-    height: 400px;
+    height: 440px;
     float: left;
-    position: relative;
     position: relative;
     overflow: inherit;
 }
 .invite-telents {
     width: auto;
-    height: 400px;
+    height: 410px;
     float: left;
     position: relative;
     overflow: inherit;

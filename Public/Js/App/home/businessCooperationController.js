@@ -42,9 +42,9 @@ define(function(require,exports,module){
     var main = {
         base:function(){
             basejs.backTop();
-            $('html,body').animate({
-                scrollTop: '0px'
-            }, 1);
+            //$('html,body').animate({
+            //    scrollTop: '0px'
+            //}, 1);
             businessCooperationController();
             setPosition($('#coop'));
             basejs.nav_hover();

@@ -458,7 +458,7 @@
         </div>
     </div>
 </div>
-<div id="slideUp" title="返回顶部" class="slideUp"><img src="/Public/Images/backtop.png"> </div>
+<div id="slideUp" title="返回顶部" class="slideUp"><img data-id="" src="/Public/Images/backtopno.png" alt="返回顶部"> </div>
 
     <script type="text/javascript">
         seajs.use('baseController.js',function(main){

@@ -16,7 +16,6 @@ define(function(require,exports,module){
         }).on('mouseout','.popover',function(){
             $(this).hide();
         });
-
     }
 
     function setPosition(selector){
@@ -31,7 +30,6 @@ define(function(require,exports,module){
         if(top >0 && top < 650 ){
             var sub = $('#subIntro');
             basejs.setValue(sub);
-
         }
         if(top >=650 && top < 1600){
             var sub = $('#subPresident');
@@ -51,8 +49,33 @@ define(function(require,exports,module){
             basejs.setValue(sub);
         }
     }
-
-
+    var top = $(document).scrollTop();
+    function nav_light(){
+        var top = $(document).scrollTop();
+        if(top > 0){
+            slideUp.find('img').attr('src','/Public/Images/backtopyes.png').data('id',1);
+        }
+        if(top >0 && top < 650 ){
+            var sub = $('#subIntro');
+            basejs.setValue(sub);
+        }
+        if(top >=650 && top < 1680){
+            var sub = $('#subPresident');
+            basejs.setValue(sub);
+        }
+        if(top >=1680 && top < 3080){
+            var sub = $('#subDev');
+            basejs.setValue(sub);
+        }
+        if(top >=3080 && top <4580){
+            var sub = $('#subOrganization');
+            basejs.setValue(sub);
+        }
+        if(top >=4580){
+            var sub = $('#subGroup');
+            basejs.setValue(sub);
+        }
+    }
     function scroll(){
         $(document).scroll(function(){
             var top = $(document).scrollTop();
@@ -61,7 +84,6 @@ define(function(require,exports,module){
             }else{
                 slideUp.find('img').attr({'src':'/Public/Images/backtopno.png'},'fast').data('id',0);
             }
-            //console.log(top);
             var a = $('.company-nav').find('a');
             if(top >0 && top < 650 ){
                 var sub = $('#subIntro');
@@ -89,12 +111,10 @@ define(function(require,exports,module){
         base:function(){
             basejs.backTop();
             popover();
-            $('html,body').animate({
-                scrollTop: '0px'
-            }, 1);
             setPosition($('#company'));
             scroll();
             basejs.nav_hover();
+            nav_light();
         }
     };
     module.exports = main ;

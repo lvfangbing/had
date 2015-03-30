@@ -17,13 +17,14 @@ define(function(require,exports,module){
             var id = $(this).data('id');
             window.open('News/showContent?id='+id);
         });
+        var top = $(document).scrollTop();
+        if(top > 0){
+            slideUp.find('img').attr('src','/Public/Images/backtopyes.png').data('id',1);
+        }
         $(window).scroll(function(){
             var top = $(document).scrollTop();
-            console.log(top);
             if(top > 10){
                 slideUp.find('img').attr('src','/Public/Images/backtopyes.png').data('id',1);
-
-                //slideUp
             }else{
                 slideUp.find('img').attr({'src':'/Public/Images/backtopno.png'},'fast').data('id',0);
             }
